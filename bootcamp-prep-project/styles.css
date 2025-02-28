@@ -1,0 +1,29 @@
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://images.pexels.com/photos/14565951/pexels-photo-14565951.jpeg?auto=compress&cs=tinysrgb&w=1600");
+    background-size:cover;
+}
+
+
+img {
+    height:20rem;
+    width:auto;
+    object-fit: contain;
+}
+
+.feedback_form {
+    background-color: rgba(250, 248, 248, 0.1);
+}
+
+
+.menu-item {
+    background-color: rgba(248,248,248,.9);
+}
+
+p.about_us {
+    font-size: 1.8em;
+    font-weight:300;
+}
+
+#name, #email, #feedback_message {
+    color: white;
+}

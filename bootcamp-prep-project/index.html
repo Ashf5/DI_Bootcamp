@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Challenge || Materialize CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!--YOUR CODE HERE-->
+    <div class="container main-article">
+        <nav>
+            <div class="nav-wrapper brown darken-1">
+                <div class="row">
+                    <div class="col s12">
+                        <ul class="hide-on-med-and-down">
+                            <li><a href="menu.html">Products</a></li>
+                            <li><a href="#"></a>Orders</li>
+                            <li><a href="#feedback">Feedback</a></li>
+                        </ul>
+
+                        <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-large"><i class="material-icons">menu</i></a>
+                        <ul class="sidenav brown darken-1" id="slide-out">
+                            <li><a href="menu.html">Products</a></li>
+                            <li><a href="#">Orders</a></li>
+                            <li><a href="#feedback">Feedback</a></li>
+                        </ul>
+
+                        <a href="#" class="brand-logo center">The Cookie Jar</a>
+                        <ul class="right hide-on-med-and-down">
+                            Follow us on <i class="fab fa-instagram"></i>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <article>
+            <div class="container" id="home_paragraphs">
+                <p class="white-text about_us">Welcome to The Cookie Jar, where every bite is a celebration of flavor and love. We take pride in crafting fresh, handmade treats from the finest ingredients. Whether you're craving a sweet pastry or a savory snack, our menu offers something special for every taste.</p>
+
+                <p class="white-text about_us">At The Cookie Jar, we believe in quality and sustainability. By using local ingredients, we ensure that everything we bake is fresh and eco-friendly. From custom cakes to warm cookies, we’re here to make every visit a delicious experience. Thank you for supporting our bakery!</p>
+            </div>
+        </article>
+
+        
+    </div>
+    <section class="container feedback" id="feedback">
+        <div class="row">
+            <div class="col s12 l6 offset-l3 feedback_form">
+                <p class="white-text">We want your feedback!</p>
+                <form action="">
+                    <div class="input-field">
+                        <i class="material-icons prefix white-text">email</i>
+                        <input type="email" id="email" required>
+                        <label for="email" class="white-text">Your Email</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix white-text">person2</i>
+                        <input type="text" id="name" required>
+                        <label for="name" class="white-text">Your Name</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix white-text">message</i>
+                        <textarea class="materialize-textarea" id="feedback_message"></textarea>
+                        <label for="feedback_message" class="white-text">Your Feedback</label>
+                    </div>
+                    <div class="input_fieldn center">
+                        <button class="btn white black-text">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, {});
+        });
+    </script>
+</body>
