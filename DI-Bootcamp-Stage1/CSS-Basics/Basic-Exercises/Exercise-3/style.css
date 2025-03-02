@@ -1,0 +1,14 @@
+
+.reg {
+    background-color: black;
+    color: white;
+}
+
+.fancy {
+    background-color: yellow;
+}
+
+.reg.fancy {
+    font-size: 28px;
+    font-family: Helvetica, "Times-New-Roman", sans-serif;
+}
