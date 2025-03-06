@@ -1,28 +1,46 @@
+body {
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    background-color: #e6f0f5;
+}
+
+
+/* This CSS deals with the navbar */
 .nav-container {
+    position: sticky;
+    top: 0;
+    z-index: 100;
     display:flex;
-    border: black solid 1px;
     height: 50px;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    background-color: #2C3E50;
+    
 }
 
 .nav-item {
     width: 25%;
     height: 50px;
     text-align: center;
+    align-content: center;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
 }
 
 .image-card {
     display: flex;
     flex-direction: column;
     width: 90%;
-    border: solid black 1px;
     align-content: center;
     flex-wrap: wrap;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
+    background-color: #F2F2F2;
 }
 
 .image-container {
@@ -35,14 +53,12 @@ img{
 }
 
 article.main-article {
-    border: black solid 1px;
     width: 70%;
     margin-right: auto;
     margin-left: auto;
     padding: 10px;
+    padding-top: 50px;
     font-size: 1.2em;
-    font-family: "Oswald", sans-serif;
-    font-style: normal;
 }
 
 #article-picture {
@@ -53,26 +69,39 @@ article.main-article {
 
 }
 
-#timeline {
+#the_timeline {
     width: 70%;
-    font-family: "Oswald", sans-serif;
+    padding-top: 50px;
     margin-right: auto;
     margin-left: auto;
 
 }
 
-#timeline p {
+#the_timeline p {
     font-weight: bold;
     margin-bottom: 0px;
 }
 
+
+section#the_gallery {
+    padding-top: 30px;
+}
+
+section #gallery_title {
+    width: 15%;
+    font-size: 1.5em;
+    border: 3px gold solid;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 .photo-gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 90%;
-    border: black solid 1px;
     margin-right: auto;
     margin-left: auto;
 
@@ -80,14 +109,21 @@ article.main-article {
 
 .gallery-image {
     width: 238px;
-    height: 316px;
+    height: 379px;
+    padding-right: 10px;
     margin:10px;
-    
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
 .gallery-image img {
     width: 100%;
-    height: 100%;
+    height: 83.4%;
     border: gold 5px solid;
     object-fit: cover;
+}
+
+.img-txt p {
+    margin-top: 10px;
+    font-size: .8em;
 }
