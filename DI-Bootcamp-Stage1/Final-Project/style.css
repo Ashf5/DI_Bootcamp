@@ -31,12 +31,15 @@ body {
     text-decoration: none;
 }
 
+/* main image css */
+
 .image-card {
     display: flex;
     flex-direction: column;
     width: 90%;
     align-content: center;
     flex-wrap: wrap;
+    margin-top:10px;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
@@ -51,6 +54,9 @@ img{
     width: 100%;
     height: inherit;
 }
+
+
+/* article css */
 
 article.main-article {
     width: 70%;
@@ -69,6 +75,8 @@ article.main-article {
 
 }
 
+/* timeline css */
+
 #the_timeline {
     width: 70%;
     padding-top: 50px;
@@ -83,12 +91,14 @@ article.main-article {
 }
 
 
+/* Picture gallery css */
+
 section#the_gallery {
     padding-top: 30px;
 }
 
 section #gallery_title {
-    width: 15%;
+    width: 15em;
     font-size: 1.5em;
     border: 3px gold solid;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
