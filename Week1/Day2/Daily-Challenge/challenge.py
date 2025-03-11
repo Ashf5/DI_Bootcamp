@@ -1,7 +1,7 @@
 # Daily Challenge
 
 from random import shuffle
-from types import new_class
+import string
 
 user_sentence = input("Enter a 10 character string ")
 if len(user_sentence) > 10:
@@ -17,10 +17,7 @@ else:
 
 
 
-
-shuffled = list(range(0, len(user_sentence)))
-shuffle(shuffled)
-new_string = ""
-for i in shuffled:
-    new_string += user_sentence[i]
-print(new_string)
+    user_sentence = list(user_sentence)
+    shuffle(user_sentence)
+    user_sentence = "".join(user_sentence)
+    print(user_sentence)
