@@ -11,8 +11,59 @@ get_full_name("Asher", "Fried", middle_name="a")
 
 
 # exercise 2
-# TODO
-# pass. Don't have time to hard code all morse code values
+def convert_to_morse(text):
+    morse_code_dict = {
+        'A': '.-',    'B': '-...',  'C': '-.-.',  'D': '-..',   'E': '.',     'F': '..-.',
+        'G': '--.',   'H': '....',  'I': '..',    'J': '.---',  'K': '-.-',   'L': '.-..',
+        'M': '--',    'N': '-.',    'O': '---',   'P': '.--.',  'Q': '--.-',  'R': '.-.',
+        'S': '...',   'T': '-',    'U': '..-',   'V': '...-',  'W': '.--',   'X': '-..-',
+        'Y': '-.--',  'Z': '--..',
+        'a': '.-',    'b': '-...',  'c': '-.-.',  'd': '-..',   'e': '.',     'f': '..-.',
+        'g': '--.',   'h': '....',  'i': '..',    'j': '.---',  'k': '-.-',   'l': '.-..',
+        'm': '--',    'n': '-.',    'o': '---',   'p': '.--.',  'q': '--.-',  'r': '.-.',
+        's': '...',   't': '-',    'u': '..-',   'v': '...-',  'w': '.--',   'x': '-..-',
+        'y': '-.--',  'z': '--..'
+    }
+    coded = ""
+    for letter in text:
+        if letter == " ":
+            coded += "/"
+        else:
+            coded += f"{morse_code_dict[letter]} "
+    return coded
+
+def convert_from_morse(text):
+    reversed_morse_code_dict = {
+        '.-': 'A',    '-...': 'B',  '-.-.': 'C',  '-..': 'D',   '.': 'E',     '..-.': 'F',
+        '--.': 'G',   '....': 'H',  '..': 'I',    '.---': 'J',  '-.-': 'K',   '.-..': 'L',
+        '--': 'M',    '-.': 'N',    '---': 'O',   '.--.': 'P',  '--.-': 'Q',  '.-.': 'R',
+        '...': 'S',   '-': 'T',    '..-': 'U',   '...-': 'V',  '.--': 'W',   '-..-': 'X',
+        '-.--': 'Y',  '--..': 'Z',
+        '.-': 'a',    '-...': 'b',  '-.-.': 'c',  '-..': 'd',   '.': 'e',     '..-.': 'f',
+        '--.': 'g',   '....': 'h',  '..': 'i',    '.---': 'j',  '-.-': 'k',   '.-..': 'l',
+        '--': 'm',    '-.': 'n',    '---': 'o',   '.--.': 'p',  '--.-': 'q',  '.-.': 'r',
+        '...': 's',   '-': 't',    '..-': 'u',   '...-': 'v',  '.--': 'w',   '-..-': 'x',
+        '-.--': 'y',  '--..': 'z'
+    }
+
+    decoded = ""
+    words = text.split("/")
+    for word in words:
+        letters = word.split()
+        for letter in letters:
+            decoded += reversed_morse_code_dict[letter]
+        decoded += " "
+    return decoded
+
+
+
+
+text = input("Enter a string to encode to morse: ")
+encoded = convert_to_morse(text)
+decoded = convert_from_morse(encoded)
+print(encoded)
+print(decoded)
+
 
 # exercise 3
 def box_printer(*args)->None:
