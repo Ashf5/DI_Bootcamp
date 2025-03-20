@@ -7,6 +7,7 @@ def get_full_name(first_name, last_name, middle_name=None):
     else:
         print(f"Hi {first_name} {last_name}")
 
+
 get_full_name("Asher", "Fried", middle_name="a")
 
 
@@ -32,6 +33,7 @@ def convert_to_morse(text):
             coded += f"{morse_code_dict[letter]} "
     return coded
 
+
 def convert_from_morse(text):
     reversed_morse_code_dict = {
         '.-': 'A',    '-...': 'B',  '-.-.': 'C',  '-..': 'D',   '.': 'E',     '..-.': 'F',
@@ -56,8 +58,6 @@ def convert_from_morse(text):
     return decoded
 
 
-
-
 text = input("Enter a string to encode to morse: ")
 encoded = convert_to_morse(text)
 decoded = convert_from_morse(encoded)
@@ -66,7 +66,7 @@ print(decoded)
 
 
 # exercise 3
-def box_printer(*args)->None:
+def box_printer(*args) -> None:
     longest = 0
     for word in args:
         if len(word) > longest:
@@ -76,28 +76,27 @@ def box_printer(*args)->None:
     for word in args:
         print(f"* {word}{' ' * (longest + 1 - len(word))} *")
 
-
     print("*" * (longest + 4))
 
 
 box_printer("hey", "there", "how", "are", "You", "doing")
 
 
-
 # exercise 4
 def insertion_sort(alist):
-   for index in range(1,len(alist)):
+    for index in range(1, len(alist)):
 
-     currentvalue = alist[index]
-     position = index
+        currentvalue = alist[index]
+        position = index
 
-     while position>0 and alist[position-1]>currentvalue:
-         alist[position]=alist[position-1]
-         position = position-1
+        while position > 0 and alist[position-1] > currentvalue:
+            alist[position] = alist[position-1]
+            position = position-1
 
-     alist[position]=currentvalue
+        alist[position] = currentvalue
 
-alist = [54,26,93,17,77,31,44,55,20]
+
+alist = [54, 26, 93, 17, 77, 31, 44, 55, 20]
 insertion_sort(alist)
 print(alist)
 # the code sorts it by moving through list starting from beginining and keeps on moving the values to the left if the number to the left is smaller than in
