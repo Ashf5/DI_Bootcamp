@@ -7,7 +7,9 @@ positions = [
 ]
 
 posi = "998"
-def draw_board(positions:list)->None:
+
+
+def draw_board(positions: list) -> None:
     """
     This function prints the board.
     Returns None
@@ -32,10 +34,9 @@ def draw_board(positions:list)->None:
     """
 
     print(board)
-    
 
 
-def count_spaces(positions)->int:
+def count_spaces(positions) -> int:
     """
     This function takes in the positions list and returns an int containing the amount of open spots on the board.
     """
@@ -45,13 +46,13 @@ def count_spaces(positions)->int:
     return space_count
 
 
-def current_player(positions)->str:
+def current_player(positions) -> str:
     """
     This function takes in the positions list, returns who's turn it is in a string.
     Either X or O
     """
     # Check who's turn it is based on how many spaces taken
-    
+
     space_count = count_spaces(positions)
     if space_count % 2 == 1:
         return "O"
@@ -63,7 +64,7 @@ def check_winner(positions):
     """
     This function checks if there's a winner. If yes it returns a string with either O, X, or Tie. If there's no winner it returns None
     """
-    
+
     for i in range(3):
         # check horizontal
         if positions[i][0] != " " and positions[i][0] == positions[i][1] and positions[i][1] == positions[i][2]:
@@ -86,7 +87,6 @@ def check_winner(positions):
 
     else:
         return None
-    
 
 
 def play_game(positions):
@@ -115,10 +115,6 @@ def play_game(positions):
             print("You must enter a valid index number")
             continue
 
-
-
-
-
         # check if there's a winner
         winner = check_winner(positions)
         if winner:
@@ -129,10 +125,6 @@ def play_game(positions):
             else:
                 print(f"player {winner} wins!!")
                 break
-
-
-
-
 
 
 play_game(positions)
