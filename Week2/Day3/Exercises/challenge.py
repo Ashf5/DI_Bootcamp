@@ -146,3 +146,97 @@ from math import sqrt
 #     return False 
 
 # print(is_palindrome("radar"))
+
+
+# exercise 13
+# def sum_over(sentence, num):
+#     total_over = 0
+#     for word in sentence.split():
+#         if len(word) > num:
+#             total_over += 1
+
+#     print(total_over)
+
+# sentence = "Do or do not there is no try"
+# num=2
+# sum_over(sentence, num)
+
+
+# exercise 14 
+# def dict_avg(dictionary):
+#     print(sum(dictionary.values()) // len(dictionary))
+
+# dict_avg({'a': 1,'b':2,'c':8,'d': 1})
+
+
+# exercise 15
+
+# def common_div(x, y):
+#     # this function counts one as one of the divisors even though octopus for some reason doesn't
+#     common = []
+#     for num in range(1, min(x, y) + 1):
+#         if x % num == 0 and y % num == 0:
+#             common.append(num)
+
+#     return common
+
+# print(common_div(10, 20))
+
+
+# exercise 16 
+# def is_prime(num):
+#     for i in range(2, int(sqrt(num))):
+#         if num % i == 0:
+#             return False 
+
+#     return True
+
+# print(is_prime(12))
+
+
+# # exercise 17 
+# def weird_print(li):
+#     weird = []
+#     for index, num in enumerate(li):
+#         if index % 2 == 0 and num % 2 == 0:
+#             weird.append(num)
+
+#     return weird 
+
+# print(weird_print([1,2,2,3,4,5]))
+
+
+
+# exercise 18
+# def type_count(**kwargs):
+#     types = dict()
+#     for item in kwargs.values():
+#         item_type = str(type(item))
+#         if item_type in types:
+#             types[item_type] += 1 
+#         else:
+#             types[item_type] = 1 
+#     return types 
+
+# print(type_count(a=1, b='string', c=1.0, d=True, e=False))
+
+
+# exercise 19 
+# def split(word, delimiter=" "):
+#     li = []
+#     string = ""
+#     for letter in word:
+#         if letter == delimiter:
+#             li.append(string)
+#             string = ""
+#         else:
+#             string += letter 
+#     return li 
+
+# print(split("hey there how are you doing, how, else,", ","))
+
+
+# exercise 20 
+input_string = input("Enter password: ")
+password = "*" * len(input_string)
+print(password) 
