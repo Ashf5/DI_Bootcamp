@@ -33,7 +33,7 @@ def main():
     print(get_random_sentence(length))
 
 
-# main()
+main()
 
 
 # exercise 2
