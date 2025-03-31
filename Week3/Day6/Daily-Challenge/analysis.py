@@ -56,7 +56,63 @@ class Text:
         return list(word_set)
                 
 
+class TextModification(Text):
+    def remove_punc(self):
+        """
+        This function returns the text without any punctuation.
+        """
+        new_string = ""
+        for letter in self.txt:
+            if letter == " " or letter == "\n":
+                new_string += letter 
+            elif letter.isalnum():
+                new_string += letter 
+
+        return new_string
+    
+    def remove_stop(self):
+        """
+        This function returns the sentence without all the stop words.
+        It also removes all extra whitespace.
+        """
+        # open file with stop words, downloaded from list from github
+        with open("stop_words.txt", "r") as f:
+            stops = [i.strip() for i in f.readlines()]
+        
+        # loop through string 
+        new_string = ""
+        for word in self.txt.split():
+            # If there's punctuation, remove it.
+            if not word.isalnum():
+                word = word[:-1]
+            if word.lower() in stops:
+                continue 
+            else:
+                new_string += (word + " ")
+        return new_string
+    
+    def remove_special(self):
+        """
+        This function removes all special characters and returns a new string.
+        """
+
+        special_characters = (
+            '!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', 
+            ':', ';', '<', '=', '>', '?', '@', '[', '\\', ']', '^', '_', '`', '{', '|', '}', '~'
+        )
+
+        new_string = ""
+        for letter in self.txt:
+            if letter in special_characters:
+                continue
+            else:
+                new_string += letter 
+        return new_string
+
 
 text = "A good book would sometimes cost as much as a good house."
 text_obj = Text.from_file("the_stranger.txt")
 print(text_obj.most_common())
+
+text2 = TextModification(text)
+print(text2.remove_special())
