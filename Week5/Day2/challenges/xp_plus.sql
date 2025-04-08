@@ -34,3 +34,10 @@ SELECT first_name, last_name FROM students WHERE SUBSTRING(first_name FROM LENGT
 SELECT first_name, last_name FROM students WHERE id IN (1, 3);
 
 SELECT first_name, last_name FROM students WHERE birth_date >= '01/01/2000';
+
+-- Ninja bonus 
+SELECT first_name, last_name, birth_date FROM students ORDER BY last_name LIMIT 4;
+
+SELECT first_name, last_name, birth_date FROM students ORDER BY birth_date DESC LIMIT 1;
+
+SELECT first_name, last_name, birth_date FROM students LIMIT 3 OFFSET 2;
