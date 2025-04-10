@@ -1,0 +1,4 @@
+-- 1 :  you get zero because NULL is an unknown number.
+-- 2:  will get 2 again null isn't counted.
+-- 3: will get zero like question 1.
+-- 4: get 2, the 6 and 7
