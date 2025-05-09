@@ -44,7 +44,7 @@
 
 // function isOmnipresent (li, num) {
 //     for (let arr of li) {
-//         if (!(num in arr)){
+//         if (!(arr.includes(num))){
 //             return false;
 //         }
 //     }
