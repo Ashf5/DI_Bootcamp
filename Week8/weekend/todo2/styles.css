@@ -1,0 +1,35 @@
+
+form {
+    display: flex;
+    border: 1px solid black;
+    width: 300px;
+    justify-content: space-between;
+}
+
+input:focus {
+    outline: none;
+}
+input {
+    height: 50px;
+    padding: 2px;
+    border: none;
+    flex: 1;
+}
+button {
+    flex:.5;
+}
+#buttonSpan {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#add {
+    background-color: green;
+    color: white;
+}
+
+#clearAll {
+    background-color: red;
+    color: white;
+}
