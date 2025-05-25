@@ -1,0 +1,51 @@
+
+body {
+    background-color: #2C007F;
+    background-image: url('assets/circuit-pattern.png');
+    margin: 0px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: greenyellow;
+    height: 60px;
+    margin: 0px;
+    position: relative;
+}
+
+.nav h1 {
+    margin: 0px;
+    position: absolute;
+    left: 10px;
+    font-family: 'SEGA LOGO FONT', sans-serif;
+}
+
+#input-field {
+    width: 40%;
+    height: 30px;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 0px;
+    
+    padding-top: 20px;
+}
+
+.card {
+    background-image: url('assets/robot.png');
+    background-color: aqua;
+    padding:8px;
+    width: 300px;
+    border-radius: 8px;
+}
+
+.card img {
+    border-radius: 50%;
+    background-color: darkblue;
+}
