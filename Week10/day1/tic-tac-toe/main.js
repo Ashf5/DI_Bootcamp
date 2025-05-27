@@ -40,7 +40,7 @@ function updateTable(e) {
 // function deals with the board if there is a winner
 function dealWinner(winner = 'tie', index = 'tie') {
     console.log('called dealwinner!');
-    
+
     if (winner !== 'tie') {
         table.style.background = 'green';
         table.removeEventListener('click', updateTable);
@@ -64,7 +64,7 @@ function checkWinner(turn) {
         i = index;
         return hasAll;
     });
-    
+
 
     if (contains == true) {
         dealWinner(turn, index = i);
@@ -88,15 +88,11 @@ function makeRandomMove() {
 
     moveCount++;
     playerTurn.innerText = `Player ${whoTurn().player}'s Turn`;
-    
-    
-    
+
+
+
     // remove from the available options
     available = available.filter(num1 => num1 !== available[num]);
-    
-    
-    
-
 }
 
 
