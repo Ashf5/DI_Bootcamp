@@ -1,0 +1,28 @@
+
+body {
+    background-color: rgb(9, 134, 175);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    border-spacing: 0px;
+    border-collapse: collapse;
+    margin-top: 90px;
+}
+
+
+td {
+    border: 4px black solid;
+    height:80px;
+    width: 80px;
+    text-align: center;
+    font-size: 60px;
+    color: white;
+}
+
+#heading {
+    color: white;
+    text-align: center;
+}
