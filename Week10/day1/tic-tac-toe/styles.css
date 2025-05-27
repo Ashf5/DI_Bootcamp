@@ -12,6 +12,11 @@ table {
     margin-top: 90px;
 }
 
+.board h3 {
+    color: white;
+    text-align: center;
+}
+
 
 td {
     border: 4px black solid;

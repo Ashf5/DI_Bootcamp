@@ -30,7 +30,7 @@ function updateTable(e) {
     }
     // remove from the available options
     available = available.filter(num1 => num1 !== turn.positions[turn.positions.length - 1]);
-    
+
     // For now just the simple version
     if (true && available.length > 0) {
         makeRandomMove();
@@ -38,20 +38,22 @@ function updateTable(e) {
 }
 
 // function deals with the board if there is a winner
-function dealWinner(winner = 'tie', index='tie') {
+function dealWinner(winner = 'tie', index = 'tie') {
+    console.log('called dealwinner!');
+    
     if (winner !== 'tie') {
         table.style.background = 'green';
         table.removeEventListener('click', updateTable);
-        for(i of winCombos[index]) {
-            data[i].style.background='red';
-            
+        for (i of winCombos[index]) {
+            data[i].style.background = 'red';
+
         }
     } else {
         table.style.background = 'green';
         table.removeEventListener('click', updateTable);
-        
+
     }
-   
+
 }
 
 // checks if there is a winner and returns which player won or blank if tie.
@@ -63,26 +65,38 @@ function checkWinner(turn) {
         return hasAll;
     });
     
-    if (contains) {
-        dealWinner(turn, index=i);
-    }else if (Array.from(data).every(item => !(item.innerText === ''))) {
-        dealWinner(index=i);
+
+    if (contains == true) {
+        dealWinner(turn, index = i);
+    } else if (Array.from(data).every(item => !(item.innerText === ''))) {
+        dealWinner(index = i);
     }
 
 }
 
 
 function makeRandomMove() {
-    let num =  Math.floor(Math.random() * available.length);
+    let turn = whoTurn();
+    let num = Math.floor(Math.random() * available.length);
     // get the cell 
     let cell = Array.from(data).filter(item => item.id.endsWith(available[num]))[0];
-    cell.innerText = whoTurn().player;
+    cell.innerText = turn.player;
 
-    moveCount ++;
+    // add to positions 
+    turn.positions.push(available[num]);
+    checkWinner(turn);
+
+    moveCount++;
     playerTurn.innerText = `Player ${whoTurn().player}'s Turn`;
+    
+    
+    
     // remove from the available options
     available = available.filter(num1 => num1 !== available[num]);
     
+    
+    
+
 }
 
 
@@ -101,7 +115,7 @@ const winCombos = [
     [6, 4, 2]
 ]
 
-let available = [0,1,2,3,4,5,6,7,8];
+let available = [0, 1, 2, 3, 4, 5, 6, 7, 8];
 
 let table = document.querySelector('table');
 let data = document.getElementsByTagName('td');
