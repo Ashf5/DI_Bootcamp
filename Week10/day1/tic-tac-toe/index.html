@@ -1,37 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-        <div id="heading">
-            <h1>Tic Tac Toe Game</h1>
-        </div>
+    <div id="heading">
+        <h1>Tic Tac Toe Game</h1>
+    </div>
+
+    <div>
+        <h3 id="choice">Play as <button >O</button> Play as <button>X</button></h3>
+    </div>
+
+    <div id="levels">
+        <button class="levelChoice">Easy Level</button>
+        <button class="levelChoice">Expert Level</button>
+    </div>
+
     <div class="board">
         <h3 id="player-turn">Player O's Turn</h3>
         <table>
             <tr>
-                <td id="box0" value="0"></td>
-                <td id="box1" value="1"></td>
-                <td id="box2" value="2"></td>
+                <td id="0"></td>
+                <td id="1"></td>
+                <td id="2"></td>
             </tr>
 
-             <tr>
-                <td id="box3" value="3"></td>
-                <td id="box4" value="4"></td>
-                <td id="box5" value="5"></td>
+            <tr>
+                <td id="3"></td>
+                <td id="4"></td>
+                <td id="5"></td>
             </tr>
 
-             <tr>
-                <td id="box6" value="6"></td>
-                <td id="box7" value="7"></td>
-                <td id="box8" value="8"></td>
+            <tr>
+                <td id="6"></td>
+                <td id="7"></td>
+                <td id="8"></td>
             </tr>
         </table>
     </div>
-    <script src="main.js"></script>
+    <!-- <script src="main.js"></script> -->
+    <script src="main2.js"></script>
 </body>
+
 </html>

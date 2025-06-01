@@ -12,6 +12,10 @@ table {
     margin-top: 90px;
 }
 
+.board {
+    display: none;
+}
+
 .board h3 {
     color: white;
     text-align: center;
