@@ -13,6 +13,7 @@ function playerChoice(e) {
 
     if (levelExpert !== undefined) {
         board.style.display = 'unset';
+        playerTurn.innerText = `Player ${opponent}'s Turn`;
     }
 }
 
@@ -25,6 +26,7 @@ function levelChoice(e) {
     document.getElementById('levels').style.display = 'none';
     if (opponent !== undefined) {
         board.style.display = 'unset';
+        playerTurn.innerText = `Player ${opponent}'s Turn`;
     }
 
 
@@ -54,15 +56,34 @@ function updateTable(e) {
         let player = getPlayer(boardInternal);
         e.target.innerText = player;
         boardInternal[nums[0]][nums[1]] = player;
+
+        // Call the computer generated move
+        if (levelExpert) {
+            minimax(boardInternal);
+        } else {
+            makeRandomMove();
+        }
     }
 
-    makeRandomMove();
 
+}
+
+// function to deal with winner 
+
+function dealWinner(coordinates) {
+    table.style.background = 'green';
+    table.removeEventListener('click', updateTable);
+    if (coordinates !== 'tie') {
+        for (element of coordinates) {
+            let id = convertId(element, reverse = true);
+            document.getElementById(`${id}`).style.background = 'red';
+        }
+    }
 }
 
 
 // takes an index and converts into indexes for nested array.
-function convertId(num, reverse=false) {
+function convertId(num, reverse = false) {
     if (reverse === true) {
         let total = num[0] * 3;
         total += num[1];
@@ -73,24 +94,33 @@ function convertId(num, reverse=false) {
 
 
 
-// Deal with the lower level random moves 
+// Deal with the lower level random moves
 function makeRandomMove() {
     let turn = getPlayer(boardInternal);
     let open = options(boardInternal);
-    
+
     let num = Math.floor(Math.random() * open.length);
-    // get the cell 
-    let cell = convertId(open[num], reverse=true);
-    document.getElementById(cell).innerText = turn;
-    boardInternal[open[num][0]][open[num][1]] = turn;
+
+    // get the cell and if tie call deal winner.
+    try {
+        let cell = convertId(open[num], reverse = true);
+        document.getElementById(cell).innerText = turn;
+        boardInternal[open[num][0]][open[num][1]] = turn;
+    } catch (err) {
+        dealWinner('tie');
+    }
+
 
 
     // check winner 
-    //todo
-    
-    //checkWinner(turn);
+    let winner = isFinal(boardInternal);
+    if (winner !== null) {
+        dealWinner(winner);
 
-    playerTurn.innerText = `Player ${turn}'s Turn`;
+    }
+
+
+    playerTurn.innerText = `Player ${opponent}'s Turn`;
 
 }
 
@@ -99,9 +129,68 @@ function makeRandomMove() {
 
 
 // minimax functions and stuff
+function makeMiniMove(cellArray) {
+    let turn = getPlayer(boardInternal);
+    // check if tie.
+    try {
+        let cell = convertId(cellArray, reverse = true);
+
+        document.getElementById(`${cell}`).innerText = turn;
+        boardInternal[cellArray[0]][cellArray[1]] = turn;
+    } catch (err) {
+        dealWinner('tie');
+    }
+
+
+    let winner = isFinal(boardInternal);
+    if (winner !== null) {
+        dealWinner(winner);
+
+    }
+
+    playerTurn.innerText = `Player ${opponent}'s Turn`;
+
+}
 
 function minimax(board) {
+    let player = opponent === 'X' ? 'O' : 'X';
+    playerTurn.innerText = `Player ${player}'s Turn`;
+    // Get all moves 
+    let possible = options(board);
 
+    let best;
+    if (player === 'O') {
+        best = [-1, -1000];
+        for (move in possible) {
+            let util = min(createState(board, possible[move]));
+
+            if (util === 1) {
+                makeMiniMove(possible[move]);
+                return
+            } else if (util > best[1]) {
+                best[0] = move;
+                best[1] = util;
+            }
+        }
+
+    } else {
+        best = [-1, 1000];
+        for (move in possible) {
+            let util = max(createState(board, possible[move]));
+            if (util === -1) {
+                makeMiniMove(possible[move]);
+                return
+            } else if (util < best[1]) {
+                best[0] = move;
+                best[1] = util;
+            }
+        }
+
+    }
+
+    // get the best option 
+
+    makeMiniMove(possible[best[0]])
 }
 
 function min(board) {
@@ -134,6 +223,7 @@ function max(board) {
 
 
     let util = utility(boardCopy);
+
     if (util !== null) {
         return util;
     }
@@ -171,20 +261,27 @@ function getPlayer(board) {
         row.forEach(item => item !== '' ? count++ : null);
     }
     if (count % 2 === 0) {
-        return 'o'
+        return opponent;
     } else {
-        return 'x'
+        return opponent === 'X' ? 'O' : 'X'
     }
 }
 
 function isFinal(board) {
     for (let i = 0; i < 3; i++) {
         if (board[i][0] !== '' && board[i][0] === board[i][1] && board[i][1] == board[i][2]) {
-            return board[i][0];
+            return [[i, 0], [i, 1], [i, 2]];
         } else if (board[0][i] !== '' && board[0][i] === board[1][i] && board[1][i] == board[2][i]) {
-            return board[0][i];
+            return [[0, i], [1, i], [2, i]];
         }
     }
+    // Check diagnols
+    if (board[0][0] !== '' && board[0][0] === board[1][1] & board[1][1] === board[2][2]) {
+        return [[0, 0], [1, 1], [2, 2]]
+    } else if (board[0][2] !== '' && board[0][2] === board[1][1] && board[1][1] === board[2][0]) {
+        return [[0, 2], [1, 1], [2, 0]];
+    }
+    // check if tie
     if (!(board.some(item => item.includes('')))) {
         return 'tie';
     }
@@ -193,14 +290,15 @@ function isFinal(board) {
 
 // takes a final board and returns the utility
 function utility(board) {
-    let player = getPlayer(board);
+    // let player = getPlayer(board);
+    let player = opponent === 'X' ? 'O' : 'X';
     let score = isFinal(board);
     if (score === null) {
         return null;
-    } else if (score === player) {
-        return 1;
     } else if (score === 'tie') {
         return 0;
+    } else if (board[score[0][0]][score[0][1]] === 'O') {
+        return 1;
     } else {
         return -1;
     }
@@ -220,7 +318,7 @@ function options(board) {
 }
 
 // Internal representation 
-let boardInternal = [['', '', ''],
-['', '', ''],
-['', '', '']];
-
+let boardInternal =
+    [['', '', ''],
+    ['', '', ''],
+    ['', '', '']];
