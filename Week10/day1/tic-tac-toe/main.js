@@ -21,7 +21,7 @@ function updateTable(e) {
     let turn = whoTurn();
     if (e.target.innerText === '') {
         e.target.innerText = turn.player;
-        turn.positions.push(Number(e.target.id[e.target.id.length - 1]));
+        turn.positions.push(Number(e.target.id));
         checkWinner(turn);
 
         // update move count to know who's turn it is.
