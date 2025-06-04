@@ -127,5 +127,17 @@ function toMorse(morseJS) {
 }
 
 
+function joinWords(transArray) {
+    let div = document.getElementById('array');
+    for (item of transArray) {
+        let p = document.createElement('p');
+        p.innerText = item;
+        div.appendChild(p);
+    }
+    
+    
+    
+}
+
 toJs(morse).then(obj => toMorse(obj))
-.then(arr => console.log(arr));
+.then(arr => joinWords(arr));
