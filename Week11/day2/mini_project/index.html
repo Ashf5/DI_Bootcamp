@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quote Generator</title>
+</head>
+
+<body>
+    <section id="quote_section">
+        <button id="generate_button" class="button">Generate Quote</button>
+        <section>
+            <p id="quote"></p>
+            <p id="quote_author"></p>
+        </section>
+    </section>
+
+    <div name="add_form">
+        <form id="add_form">
+            <label for="quote">New Quote</label>
+            <input type="text" name="quote" placeholder="quote" required>
+            <label for="author">Author</label>
+            <input type="text" name="author" placeholder="author" required>
+            <input type="submit" value="Add Quote" id='add_button' class="button">
+        </form>
+    </div>
+
+    <div id="search">
+        <form id="search_form">
+            <input type="text" name="author_query" placeholder="Search By Author" required>
+            <input type="submit" value="search" id="search_button" class="button">
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
