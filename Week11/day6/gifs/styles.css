@@ -1,0 +1,27 @@
+
+#gif_section div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    height: 150px;
+    border: 2px solid black;
+
+}
+
+#form_div {
+    margin-bottom: 10px;
+}
+
+img {
+    width: 100px;
+}
+
+button {
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 3px;
+}
