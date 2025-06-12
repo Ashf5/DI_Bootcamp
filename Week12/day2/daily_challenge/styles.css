@@ -1,0 +1,85 @@
+body {
+    background-image: url('assets/output.jpg');
+    background-size: cover;
+
+}
+
+.disabled {
+    background-color: rgba(128, 128, 128, 0.3);
+    pointer-events: all;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+input {
+    border-radius: 4px;
+}
+
+select {
+    border-radius: 4px;
+}
+
+
+
+.converted {
+    width: 200px;
+    background-color: white;
+    margin: 20px;
+    padding: 5px;
+    font-size: 24px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 4px;
+}
+
+#main_section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -15,6 +15,7 @@ async function getSunrise(e) {
             throw new Error('Empty form field');
         }
 
+        // Fetch data
         let firstCity = fetch(`${url}lat=${form.lat1.value}&lng=${form.lon1.value}`);
         let secondCity = fetch(`${url}lat=${form.lat2.value}&lng=${form.lon2.value}`);
         data = await Promise.all([firstCity, secondCity]);
@@ -26,18 +27,14 @@ async function getSunrise(e) {
     }
     
     try {
-        let cityOneJson = await data[0].json();
-        let cityTwoJson = await data[1].json();
-        displaySunrise(cityOneJson);
-        displaySunrise(cityTwoJson);
+        // Get the json and display to the page.
+        let cities = await Promise.all(data.map(item => item.json()));
+        displaySunrise(cities[0]);
+        displaySunrise(cities[1]);
     }catch(err) {
         console.log(err);
         alert(err);
     }
-    
-    
-
-
 
 }
 
