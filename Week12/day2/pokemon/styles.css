@@ -1,0 +1,105 @@
+img {
+    height: 200%;
+}
+
+#page_div {
+    display: flex;
+    justify-content: center;
+}
+
+#gameboy {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#top {
+    width: 35%;
+    aspect-ratio: 2/1;
+    background-color: red;
+    border-radius: 10px;
+    border: 2px black solid;
+}
+
+#middle {
+    width: 33%;
+    aspect-ratio: 6/1;
+    background-color: rgb(225, 11, 11);
+    border: 4px black solid;
+    border-radius: 6px;
+    text-align: center;
+}
+
+#bottom {
+    width: 60%;
+    aspect-ratio: 2.5/1;
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+}
+
+
+
+#screen {
+    width: 60%;
+    height: 100%;
+    background-color: red;
+    border-radius: 10px;
+}
+
+#random_button {
+    height: 40%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: green;
+}
+
+.screen-parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.screen {
+    width: 70%;
+    height: 80%;
+    border: 2px solid lightblue;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(246, 199, 199);
+}
+
+.button-div {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
