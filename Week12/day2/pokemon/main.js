@@ -5,27 +5,32 @@ let buttons = document.querySelectorAll('button');
 Array.from(buttons).map(button => button.addEventListener('click', buttonEvent));
 
 
-async function getPokemon(id=randomNumber()) {
-    try{
+async function getPokemon(id = randomNumber()) {
+    try {
+        if (id > 1025) {
+            throw new Error('You have reached the end of the list.')
+        }
         let url = `https://pokeapi.co/api/v2/pokemon/${id}/`;
         let data = await fetch(url)
-        if (! data.ok) {
+        if (!data.ok) {
             throw new Error('Error fetching the data: ' + data);
         }
         let jsonData = await data.json();
+        
         return jsonData;
-    }catch(err) {
+    } catch (err) {
         return err;
     }
-    
-    
+
+
 }
 
-let randomNumber =  () => Math.floor(Math.random() * 1025) + 1;
+let randomNumber = () => Math.floor(Math.random() * 1025) + 1;
 
 function parsePokemonJson(jsonData) {
+    
     let pokemonObj;
-    try{
+    try {
         pokemonObj = {
             id: jsonData.id,
             name: jsonData.name,
@@ -34,9 +39,10 @@ function parsePokemonJson(jsonData) {
             type: jsonData.types[0].type.name,
             picture: jsonData.sprites.front_default,
         }
-    }catch(err) {
+    } catch (err) {
         return err;
     }
+    
     return pokemonObj;
 }
 
@@ -47,11 +53,11 @@ async function buttonEvent(e) {
     let jsonData;
     if (e.target.id === 'random_button') {
         jsonData = await getPokemon();
-    }else if (e.target.id === 'previous_button') {
+    } else if (e.target.id === 'previous_button') {
         if (currentPokemon < 2) {
             console.log('already at 1');
             jsonData = await getPokemon(1);
-        }else {
+        } else {
             jsonData = await getPokemon(currentPokemon - 1);
         }
     } else {
@@ -59,14 +65,14 @@ async function buttonEvent(e) {
             console.log('Error, fetching the first');
             jsonData = await getPokemon(1);
             currentPokemon = 1;
-        }else {
+        } else {
             jsonData = await getPokemon(currentPokemon + 1);
         }
     }
-
+    
     // call the parse pokemon and make sure there's no errors
-    let pokemonObj = parsePokemonJson(jsonData);
-
+    
+    pokemonObj = parsePokemonJson(jsonData);
     if (pokemonObj instanceof Error) {
         alert(pokemonObj);
         removeLoading();
@@ -94,13 +100,15 @@ function displayOnScreen(pokemonObj) {
 
 
 // Add a loader to the middle
-function addLoading()  {
+function addLoading() {
     let middleDiv = document.getElementById('middle');
-    
-    let span = document.createElement('span');
+    if (middleDiv.innerHTML === '') {
+        let span = document.createElement('span');
 
-    span.classList.add('loader');
-    middleDiv.appendChild(span);
+        span.classList.add('loader');
+        middleDiv.appendChild(span);
+    }
+
 }
 
 function removeLoading() {
