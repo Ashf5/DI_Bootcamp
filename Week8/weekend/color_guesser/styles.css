@@ -1,0 +1,151 @@
+/* Global styles and layout */
+body {
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#title {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Level buttons styling */
+#levels-div {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 600px;
+}
+
+.level {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: white;
+    color: #2c3e50;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.level:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+}
+
+/* Color display area */
+#color-display {
+    width: 90%;
+    max-width: 400px;
+    height: 300px;
+    margin: 2rem auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+
+/* Choice buttons area */
+#choice-area {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 20px;
+}
+
+#choice-area button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    background: white;
+    color: #2c3e50;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    min-width: 150px;
+    font-family: monospace;
+}
+
+#choice-area button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+}
+
+/* Feedback area */
+#feedback-area {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#feedback-area img {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #title {
+        font-size: 2rem;
+    }
+
+    #levels-div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .level {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    #color-display {
+        height: 250px;
+    }
+
+    #choice-area button {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    #title {
+        font-size: 1.5rem;
+    }
+
+    #color-display {
+        height: 200px;
+    }
+
+    #feedback-area img {
+        max-width: 250px;
+    }
+}
