@@ -46,3 +46,34 @@ app.post('/api/books', (req, res) => {
     books.push({id, title, author, publishedYear});
     res.status(201).json({id, title, author, publishedYear});
 })
+
+app.put('/api/books/:id', (req, res) => {
+    let {title, author, publishedYear} = req.body;
+    if (!title || !author || !publishedYear) {
+        res.status(400).json({msg: 'Improper data received.'});
+        return;
+    }
+    
+    let id = req.params.id;
+    let bookFound = books.find(item => item.id === Number(id));
+    if (bookFound) {
+        bookFound.author = author;
+        bookFound.title = title;
+        bookFound.publishedYear = publishedYear;
+        res.json({msg: 'Book updated'});
+        return;
+    }else {
+        res.status(404).json({msg: 'No book found'});
+    }
+})
+
+app.delete('/api/books/:id', (req, res) => {
+    let id = Number(req.params.id);
+    let index = books.findIndex(item => item.id === id);
+    if (index === -1) {
+        res.status(404).json({msg: 'book not found'});
+        return;
+    }
+    books.splice(index, 1);
+    res.json({msg: 'book deleted'});
+})
