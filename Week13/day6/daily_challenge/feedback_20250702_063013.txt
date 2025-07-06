@@ -1,0 +1,18 @@
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day6/daily_challenge/app.js
+suggestions for improvement:
+- The provided code only sets up the server and imports a router.  The crucial `trivia.js` router file is missing, preventing a complete evaluation of the quiz functionality. The implementation of GET `/quiz`, POST `/quiz`, and GET `/quiz/score` routes, along with question handling and score tracking are not present.
+- Add error handling for cases like missing parameters or incorrect user input.
+- Consider using a more robust templating engine (like EJS or Handlebars) for better presentation of the quiz and results instead of relying solely on plain text responses.
+- Implement input sanitization to prevent potential vulnerabilities like cross-site scripting (XSS).
+Correctness: 60%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day6/daily_challenge/package.json
+suggestions for improvement:
+- Checker failed to provide a response.
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day6/daily_challenge/routers/trivia.js
+suggestions for improvement:
+- Checker failed to provide a response.
+Correctness: N/A%
+-----

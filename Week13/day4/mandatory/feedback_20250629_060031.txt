@@ -1,0 +1,56 @@
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day4/mandatory/blog-api/package.json
+suggestions for improvement:
+- This JSON represents a `package.json` file, not a solution to any of the exercises.  It only sets up the project structure and dependencies for using Express.js.  No actual API code is present.
+- The exercises require implementing Express.js routes to handle CRUD operations for blog posts and books.  This `package.json` does not provide any of that functionality.
+- Implement the `server.js` (or `app.js`) file with the appropriate Express.js routes and logic to handle the CRUD operations as described in Exercise 1, Exercise 2, and Exercise 3.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day4/mandatory/blog-api/server.js
+suggestions for improvement:
+- Improve error handling to provide more specific error messages and consider using a more robust error handling middleware.
+- Add input validation to prevent issues like SQL injection or cross-site scripting (XSS) attacks if the data source were a real database. 
+- Use a more sophisticated data store instead of an in-memory array for production environments.
+- The PUT request should return the updated post, not just a message. 
+- Consider using a more structured approach to error handling, perhaps using a custom error class and a centralized error handler middleware.
+Correctness: 95%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day4/mandatory/book-api/app.js
+suggestions for improvement:
+- Implement the remaining CRUD operations (UPDATE and DELETE) for the `/api/books` endpoint as described in Exercise 2.
+- Add input validation to prevent vulnerabilities like SQL injection (although not directly applicable here since we're using an in-memory array, it's good practice to consider).
+- Consider using a more robust data store than an in-memory array for production environments (e.g., a database).
+- Improve error handling to provide more specific and informative error messages.
+- Add logging for debugging and monitoring purposes.
+Correctness: 70%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day4/mandatory/book-api/package.json
+suggestions for improvement:
+- This JSON only shows package information.  It doesn't contain any code to address the exercises. The exercises require the creation of three different Express.js APIs.  This JSON provides only the `package.json` file structure and dependencies, which is a prerequisite, but not the actual solution.
+- Provide the actual `server.js`, `app.js`, and `dataService.js` files (as specified in the exercises) to get a proper evaluation.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day4/mandatory/crud-api/app.js
+suggestions for improvement:
+- The code only implements a single GET route for fetching posts from an external API.  The exercises require building CRUD APIs for blog posts and books, handling POST, PUT, and DELETE requests.
+- Error handling is basic. More robust error handling should be implemented, including specific error messages and handling different types of errors.
+- The code uses `dataService.js` which correctly fetches posts, but  Exercise 1 and 2 require implementing data storage within the app itself (using an in-memory array).
+- Input validation is missing. The API should validate inputs (e.g., checking for required fields, data types) before processing requests.
+- Security considerations are minimal.  Production APIs should include measures to protect against common vulnerabilities like SQL injection (though not applicable here as it's in-memory), cross-site scripting (XSS), and cross-site request forgery (CSRF).
+- The code is missing functionality for exercises 1 and 2. It only addresses a subset of Exercise 3.
+Correctness: 80%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day4/mandatory/crud-api/data/dataService.js
+suggestions for improvement:
+- Add more robust error handling.  Currently, it only logs the error and returns `undefined`. Consider throwing a custom error with more context for better debugging and handling in the calling function.
+- The performance could be slightly improved by adding a timeout to the axios request to prevent indefinite hanging if the API is unavailable.
+- Consider adding comments explaining the purpose of the `try...catch` block and what happens in each case.
+Correctness: 100%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day4/mandatory/crud-api/package.json
+suggestions for improvement:
+- The provided code is a `package.json` file, which is a project configuration file. It does not contain any implementation of the exercises described in the chapter content.  The exercises require creating Express.js servers with specific CRUD functionalities.  This `package.json` merely sets up the dependencies for such a project but provides no actual code for the exercises.
+- Create the `app.js`, `server.js`, and `dataService.js` files as instructed and implement the CRUD functionalities to build the APIs.
+- Implement error handling as specified in Exercise 1.
+- For Exercise 3, ensure you handle potential errors from the Axios request (e.g., network errors).
+Correctness: 0%
+-----
