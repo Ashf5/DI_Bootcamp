@@ -1,0 +1,48 @@
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day2/daily-challenge/app.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day2/daily-challenge/app2.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day2/daily-challenge/challenge.js
+suggestions for improvement:
+- The `readFileData` function in `read-file.js` should handle potential errors (e.g., file not found) using `fs.readFile`'s asynchronous callback or promises.  Currently, an error would crash the program.
+- Add error handling to `readFileData` to gracefully handle situations where the file doesn't exist or is inaccessible.
+- The `app.js` files in Task 1 and Task 2 should be renamed to avoid confusion.  Using a consistent naming convention (e.g., `task1.js`, `task2.js`) would enhance organization.
+Correctness: 95%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day2/daily-challenge/colorful-message.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day2/daily-challenge/files/app.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day2/daily-challenge/files/read-file.js
+suggestions for improvement:
+- The `readFileData` function uses a callback which is considered less modern than using Promises or async/await.  Switching to Promises or async/await would improve readability and allow for better error handling.
+- The function doesn't return the file data; it only logs it to the console.  It should return a Promise that resolves with the file data or rejects with an error, allowing the calling function to handle the result asynchronously.
+- Error handling could be improved. Instead of simply logging the error and throwing a new error, consider providing more context and potentially handling specific error types differently.
+- Add input validation to check if filePath is a string and is not empty before attempting to read the file.
+Correctness: 80%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day2/daily-challenge/greeting.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day2/daily-challenge/package.json
+suggestions for improvement:
+- The `app.js` files in Tasks 1, 2, and 3 should be consolidated into a single `app.js` file to better reflect the 'integration' aspect of the Challenge Task.
+- The Challenge Task should explicitly call functions from `greeting.js`, `colorful-message.js`, and `read-file.js` in a logical sequence.  Currently, it only mentions requiring them.
+- Error handling (e.g., for file reading in `read-file.js`) should be added for robustness.
+- Add more descriptive comments to the code to improve understanding.
+Correctness: 80%
+-----
