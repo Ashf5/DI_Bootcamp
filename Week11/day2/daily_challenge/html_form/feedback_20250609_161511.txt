@@ -1,0 +1,16 @@
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week11/day2/daily_challenge/html_form/index.html
+suggestions for improvement:
+- The code is missing the `main.js` file which contains the JavaScript logic to handle form submission and JSON output.  The provided HTML structure is correct but incomplete without the JavaScript.
+- Add input validation to prevent unexpected data entry (e.g., only allowing alphabetical characters in name fields).
+- Improve error handling. What happens if the user doesn't fill both fields?
+- Use more descriptive IDs for better code readability (e.g., instead of `json-place`, use `output-container`).
+Correctness: 80%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week11/day2/daily_challenge/html_form/main.js
+suggestions for improvement:
+- The code lacks the actual HTML form structure.  The instructions require creating a form with two fields (name, last name) and a submit button.  The JavaScript code assumes the form exists with specific IDs.
+- The variable names `name` and `lastname` could be improved for better readability.  Consider `firstName` and `lastName` to match the form field names.
+- Add error handling. What if the user doesn't enter values?  Displaying a message to the user would improve the user experience.
+- Using `document.createTextNode` is acceptable but less efficient for larger JSON objects.  Consider using `div.textContent = JSON.stringify(obj);` for better performance.
+Correctness: 95%
+-----

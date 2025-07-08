@@ -1,0 +1,25 @@
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week11/day2/exercises/mandatory/index.html
+suggestions for improvement:
+- The code is missing the form with GET method as requested in Exercise 1.  Only a POST method form is present.
+- The `action` attribute is missing from both forms.  Without it, the form submits to the same page, fulfilling the requirement, but it's best practice to specify an action.
+- Add input type='submit' to the submit buttons for better semantics and accessibility.
+- Consider adding placeholder text to the textarea for better user experience.
+Correctness: 60%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week11/day2/exercises/mandatory/main.js
+suggestions for improvement:
+- The code could include a more descriptive variable name than `jsonString`.  For example, `marioGameJson` would be clearer.
+- Adding error handling (though not strictly required by the prompt) would make the code more robust.  For instance, checking if `JSON.stringify` succeeded.
+Correctness: 100%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week11/day2/exercises/mandatory/styles.css
+suggestions for improvement:
+- The provided code only includes CSS styling for a form; it doesn't implement the HTML structure for the forms required in Exercises 1 and 2.
+- The code lacks the JavaScript functionality needed to handle form submission and data manipulation as specified in the exercises.
+- It doesn't address Exercise 3, which involves JSON manipulation and debugging.
+- Add the actual HTML form elements (input fields, textarea, submit button) with appropriate names and attributes (e.g., `name` attribute for each input).
+- Implement the GET and POST methods for form submission in Exercises 1 and 2, respectively.  This will require adding the `method` attribute to the `<form>` tag and potentially JavaScript to handle the response.
+- For Exercise 3, provide the JavaScript code that converts the `marioGame` object to JSON, pretty-prints it, and demonstrates the use of the web inspector's breakpoint functionality.
+- Improve readability by adding comments and better structuring the HTML and JavaScript code.
+Correctness: 0%
+-----
