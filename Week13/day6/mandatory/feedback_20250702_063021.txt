@@ -1,0 +1,50 @@
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day6/mandatory/exercise1/app.js
+suggestions for improvement:
+- The code is missing the actual route definitions in `./routes/index.js`.  The instructions clearly state to create routes for '/' and '/about' in Exercise 1.  These routes need to be implemented to achieve a complete solution for Exercise 1.
+- Error handling is missing. The application should gracefully handle potential errors (e.g., connection errors, invalid input).
+- Exercise 2 and 3 are entirely missing. The provided code only addresses a portion of Exercise 1.
+- The code uses port 5000 instead of 3000 as specified in the instructions.  While not a correctness issue, it deviates from the instructions.
+- The `app.use(router)` statement should ideally be placed *before* any static middleware or other route definitions to ensure that the router handles requests properly
+- Security best practices are largely absent. Input validation and sanitization should be included to protect against common vulnerabilities such as injection attacks and cross-site scripting (XSS).
+Correctness: 80%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day6/mandatory/exercise1/package.json
+suggestions for improvement:
+- Checker failed to provide a response.
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day6/mandatory/exercise1/routes/index.js
+suggestions for improvement:
+- Checker failed to provide a response.
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day6/mandatory/exercise2/app.js
+suggestions for improvement:
+- Checker failed to provide a response.
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day6/mandatory/exercise2/package.json
+suggestions for improvement:
+- Checker failed to provide a response.
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day6/mandatory/exercise2/routes/todos.js
+suggestions for improvement:
+- Checker failed to provide a response.
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day6/mandatory/exercise3/app.js
+suggestions for improvement:
+- Checker failed to provide a response.
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day6/mandatory/exercise3/package.json
+suggestions for improvement:
+- Checker failed to provide a response.
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day6/mandatory/exercise3/routes/books.js
+suggestions for improvement:
+- Checker failed to provide a response.
+Correctness: N/A%
+-----
