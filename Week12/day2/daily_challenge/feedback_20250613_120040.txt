@@ -1,0 +1,27 @@
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week12/day2/daily_challenge/index.html
+suggestions for improvement:
+- Implement the functionality to fetch data from the ExchangeRate API using async/await and the Fetch API as specified in the chapter content.  The provided HTML only sets up the UI; the core conversion logic is missing.
+- Add error handling for API requests.  The code should gracefully handle cases where the API is unavailable or returns an error.
+- Improve the UI with better styling and potentially visual feedback during the conversion process (e.g., a loading indicator).
+- Implement the bonus feature: a button to switch the 'from' and 'to' currencies and update the conversion accordingly.
+- Populate the select dropdown options ('from' and 'to') with currencies fetched from the ExchangeRate API's supported codes endpoint.
+Correctness: 80%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week12/day2/daily_challenge/main.js
+suggestions for improvement:
+- Improve error handling: The error messages are quite generic.  Consider providing more specific error messages to the user, indicating precisely what went wrong (e.g., "Invalid currency code", "Network error", etc.).
+- Add input validation: While the code checks for empty fields and positive numbers, more robust input validation is needed. For example, check if the input currency codes are valid against the list of supported currencies.
+- Enhance UI feedback: The loading indicator is minimally styled.  Provide a more visually appealing loading indicator and improve the error message display for better user experience.
+- Implement the bonus feature (switch button): The instructions mention a 'switch' button to reverse the currencies. This feature is missing.
+- API Key Security:  The API key is hardcoded in the code.  For production, store this securely (e.g., environment variables).
+- Use more descriptive variable names:  Names like `formValues`, `exchangeFrom`, and `exchangeTo` could be more specific to improve readability.
+Correctness: 95%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week12/day2/daily_challenge/styles.css
+suggestions for improvement:
+- The provided code is only CSS and HTML. It lacks the core JavaScript functionality required to fetch data from the ExchangeRate API, perform currency conversions, and update the UI.  It needs to implement `fetch` API calls and `async/await` as specified in the chapter content.
+- Add JavaScript code to handle user input, API calls, and dynamic updates to the output area. Include error handling for API requests.
+- Implement the currency switching functionality (bonus task).
+- Consider using a JavaScript framework or library (like React, Vue, or Angular) to better manage the application's state and UI updates. This is not mandatory for this task, but highly recommended for larger-scale projects.
+Correctness: 0%
+-----
