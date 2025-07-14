@@ -1,0 +1,15 @@
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day6/daily_challenge/app.js
+suggestions for improvement:
+- Checker failed to provide a response.
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day6/daily_challenge/package.json
+suggestions for improvement:
+- Checker failed to provide a response.
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day6/daily_challenge/routers/trivia.js
+suggestions for improvement:
+- Checker failed to provide a response.
+Correctness: N/A%
+-----
