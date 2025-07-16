@@ -1,0 +1,81 @@
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day2/xp/app/package.json
+suggestions for improvement:
+- This JSON file is a `package.json` file which describes the project dependencies and scripts. It does not contain any React code that addresses the exercises outlined in the chapter content.
+- The exercises require creating React components, using JSX, styling components using inline styles and CSS files, and manipulating data to render elements.  This `package.json` only sets up the project environment; it doesn't implement any of that functionality.
+- To provide a score,  please supply the React code (App.js, Exercise3.js, UserFavoriteAnimals.js, Exercise.css, etc.) that implements the exercises.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day2/xp/app/public/index.html
+suggestions for improvement:
+- This code is just the basic HTML structure for a React app created using `create-react-app`.  It doesn't contain any of the JavaScript code (App.js, UserFavoriteAnimals.js, Exercise3.js, etc.) necessary to complete the exercises outlined in the chapter content.  The exercises require creating components, using JSX, styling with inline styles and external CSS files, and manipulating data within the components.  This HTML file alone does nothing to address these requirements.
+- Add the necessary JavaScript files (App.js, UserFavoriteAnimals.js, Exercise3.js) and implement the solutions to the exercises described in the document.  The solution should demonstrate the use of JSX, inline styles, and external CSS files to create and style React components.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day2/xp/app/public/manifest.json
+suggestions for improvement:
+- This JSON is a manifest file for a React app, not actual code that addresses the exercises.  It describes the app's metadata (icons, theme, etc.) but doesn't contain any React components or JSX.
+- To receive a correctness score above 0, provide the actual React code that implements the exercises (Exercise 1, 2, 3, etc.)
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day2/xp/app/src/App.css
+suggestions for improvement:
+- The provided CSS code is a standard React App CSS file,  it does not address any of the exercises outlined in the Chapter Content/Questions.  It needs to be replaced with code that implements the exercises.
+- Create `App.js`, `UserFavoriteAnimals.js`, and `Exercise3.js` components to fulfill the exercises.
+- Implement JSX, handle object data, and incorporate CSS styling as specified in the exercises.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day2/xp/app/src/App.js
+suggestions for improvement:
+- Exercise 1 is missing the instruction to create an element without JSX.  Add that to complete the exercise.
+- Add error handling for potential issues with prop passing in the `UserFavoriteAnimals` and `Exercise` components. For instance, what happens if `favAnimals` is undefined or null?
+- Consider using functional components with hooks instead of class components where appropriate for improved modern React coding style.  `UserFavoriteAnimals` could benefit from this change.
+- Improve the structure of the `App.js` file by potentially separating components into more manageable chunks to improve maintainability and readability.  For example, creating a separate component to render user information.
+- Add comprehensive unit tests for all components to ensure that they are working as expected and to catch potential bugs. This is very important for future maintainability.
+Correctness: 90%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day2/xp/app/src/App.test.js
+suggestions for improvement:
+- The provided code is a Jest test for a React application, which is not directly related to the exercises outlined in the chapter content.  The chapter focuses on creating a React app, using JSX, and styling components. This test checks for the presence of a 'learn react' link, which is not part of the exercises.
+- Replace this test with code that addresses the exercises.  For example, Exercise 1 involves creating and rendering JSX elements. Exercise 2 involves working with objects and components.  Exercise 3 involves using HTML tags and CSS styling within React components.  Implement solutions for these exercises to demonstrate understanding of the chapter material.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day2/xp/app/src/Exercise.css
+suggestions for improvement:
+- No specific feedback.
+Correctness: 100%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day2/xp/app/src/Exercise3.js
+suggestions for improvement:
+- The image source `/logo512.png` is likely relative to the project's root.  It should be an absolute URL or a path relative to the `Exercise.js` file for consistent behavior across different environments. Consider using a placeholder image until a proper image is provided.
+- Add error handling for potential issues, such as the image failing to load. A fallback mechanism is recommended to enhance user experience.
+Correctness: 85%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day2/xp/app/src/UserFavoriteAnimals.js
+suggestions for improvement:
+- The code is well-structured and functional.  Consider adding propType validation to `UserFavoriteAnimals` for better robustness.  This would ensure that `favAnimals` is always an array, preventing unexpected behavior if it's not.
+- While the `key` prop is correctly used for list items, using the index as a key is generally discouraged in React if the order of items might change. If there's a unique identifier available for each animal (e.g., an ID), it should be used as the key instead.
+Correctness: 100%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day2/xp/app/src/index.css
+suggestions for improvement:
+- The provided code is just CSS styling for a webpage. It does not contain any JavaScript or React code to address the exercises outlined in the chapter content.
+- The exercises require creating a React app, using JSX, styling components using inline styles and external CSS files, and working with components and props.
+- This CSS code is well-formatted and readable, but it is completely irrelevant to the chapter's objectives.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day2/xp/app/src/index.js
+suggestions for improvement:
+- This code only provides a basic React app setup.  It doesn't implement any of the exercises outlined in the chapter content.  The exercises require creating components, using JSX, styling components, and working with objects and arrays.  This code lacks any of that functionality.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day2/xp/app/src/reportWebVitals.js
+suggestions for improvement:
+- This code is a standard React performance monitoring setup using web-vitals.  It's completely unrelated to the exercises in the chapter content which focus on JSX, styling, and component creation.
+- Remove this code as it's irrelevant to the chapter's learning objectives.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day2/xp/app/src/setupTests.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
