@@ -1,0 +1,99 @@
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day2/mandatory/app.js
+suggestions for improvement:
+- The code could include input validation to handle cases where the `people` array is empty or contains invalid age data.  This would prevent potential errors and improve robustness.
+- Adding a more descriptive variable name than `avg` (e.g., `averageAge`) would enhance readability.
+Correctness: 100%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day2/mandatory/app2.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day2/mandatory/data.js
+suggestions for improvement:
+- The code is missing the `app.js` file which is crucial for Exercise 2.  The provided code only shows the `data.js` file with the data, but doesn't demonstrate importing and using it to calculate the average age as instructed.
+- Add error handling for cases where the input file might not exist (in Exercise 3).
+- For Exercise 3, the instructions mention writing 'Writing to the file' to 'Bye World.txt', but the code doesn't show this implementation.
+- The exercises are incomplete; only the data for Exercise 2 is provided, not the complete solutions.
+Correctness: 80%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day2/mandatory/file-explorer/copy-file.js
+suggestions for improvement:
+- Add error handling for the case where `source.txt` does not exist.
+- Consider using `fs.promises` for cleaner asynchronous operations (Exercise 7 mentions using the `fs` module, but doesn't specify synchronous vs. asynchronous).
+- Add a success message to indicate when the file copy is complete.
+- The `read-directory.js` file, also mentioned in Exercise 7, is missing.
+Correctness: 80%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day2/mandatory/file-explorer/read-directory.js
+suggestions for improvement:
+- The `readDirectory` function correctly addresses part of Exercise 7 by reading and displaying the files in a directory.  However, it only handles the `read` part, not the `copy` part.  Add a `copyFile` function to complete Exercise 7.
+- Error handling could be improved.  Instead of just logging the error, consider throwing an error or providing more context to the user.  Consider more robust error handling for situations beyond simple file read errors.
+- Add input validation to ensure that the provided directory path is valid before attempting to access it.
+- Use `async/await` for better readability and error handling instead of callbacks
+Correctness: 80%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day2/mandatory/fileManager.js
+suggestions for improvement:
+- The `readFile` and `writeFile` functions are asynchronous.  The provided code logs the data to the console within the callback, but it doesn't return a promise or use async/await, making it harder to use in a synchronous context or chain operations.  Returning promises would significantly improve this.
+- Error handling is rudimentary.  While it logs errors, it doesn't handle them gracefully (e.g., throwing an error to be caught by a calling function or using a more sophisticated error handling strategy).
+- Add input validation.  Check if the file exists before attempting to read it, and handle cases where the file path might be invalid.
+Correctness: 80%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day2/mandatory/math-app/app.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day2/mandatory/math-app/math.js
+suggestions for improvement:
+- The provided code is a simple module for addition and multiplication, which is only part of Exercise 5.  It doesn't address any of the other exercises. To receive a higher correctness score, the code needs to include solutions for Exercises 1 through 7.
+- Add error handling (e.g., for invalid input types in `addition` and `multiplication`).
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day2/mandatory/math-app/package.json
+suggestions for improvement:
+- This is a `package.json` file, not the code for any of the exercises.  It sets up a project to use lodash, which is part of Exercise 5, but doesn't contain any implementation of the exercise itself.
+- The exercises require creating JavaScript files (`products.js`, `shop.js`, `data.js`, `app.js`, `fileManager.js`, etc.)  This JSON only describes project metadata and dependencies.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day2/mandatory/npm-beginner/app.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day2/mandatory/npm-beginner/package.json
+suggestions for improvement:
+- The `package.json` file is well-structured and correctly sets up the project for using the `chalk` package.  No improvements needed for this specific file in relation to the exercise.
+Correctness: 100%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day2/mandatory/products.js
+suggestions for improvement:
+- The provided code only addresses part of Exercise 1.  It creates the `products.js` file and exports the product array correctly using CommonJS syntax. However, it's missing the `shop.js` file which should import and use the products. A complete solution would include `shop.js` with a function to search for products and print their details.
+- Add error handling for cases where the product is not found in `shop.js`.
+- Consider using a more robust search mechanism (e.g., case-insensitive search) in `shop.js`.
+- The code lacks the implementation for Exercises 2 through 7.
+Correctness: 80%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day2/mandatory/shop.js
+suggestions for improvement:
+- The code is missing the `products.js` file, which is crucial for the exercise.  The solution should include a sample `products.js` file with an array of product objects as specified in Exercise 1.
+- Error handling is missing.  If the product is not found, the function returns `undefined`. It would be better to return a more informative message or throw an error.
+- The search function could be improved using a more efficient search algorithm, such as binary search if the array is sorted. However, for small datasets, the current linear search is acceptable. 
+- Add comments to explain the purpose of the `search` function and the variables used.
+Correctness: 80%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day2/mandatory/todoApp/app.js
+suggestions for improvement:
+- The code doesn't handle errors (e.g., trying to complete a non-existent task).  Error handling should be added.
+- The `TodoList` class definition is missing from the provided code snippet.  The full implementation of `TodoList` (including `addTask`, `completeTask`, and `listTasks` methods) needs to be shown to fully assess correctness.
+- Consider adding more robust testing to verify all functionalities of the TodoList class.
+Correctness: 80%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day2/mandatory/todoApp/todo.js
+suggestions for improvement:
+- The `completeTask` function could be improved by returning a boolean to indicate success or failure.  Currently, it only logs a message and doesn't provide a way to check if the task was actually found and updated.
+- Consider adding error handling (e.g., try...catch blocks) for file operations in future exercises involving file I/O.  While not required here, it's a good habit.
+- For larger todo lists, a more efficient search mechanism than a linear scan (used in `completeTask`) might be beneficial.  For example, using a map keyed by task name would allow O(1) lookup.
+Correctness: 100%
+-----

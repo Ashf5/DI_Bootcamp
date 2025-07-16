@@ -1,0 +1,81 @@
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day6/daily_challenge/form/package.json
+suggestions for improvement:
+- This is a `package.json` file, not React code.  It defines project dependencies and scripts but doesn't contain any implementation for the form handling described in the challenge.
+- The challenge requires creating React components (`App.js`, `FormComponent`), handling form input changes (`handleChange`), updating component state, and submitting form data to the URL.  This file provides none of that functionality.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day6/daily_challenge/form/public/index.html
+suggestions for improvement:
+- The provided HTML file is a basic React app template.  It does not contain any of the React components or logic needed to fulfill the challenge requirements.  You need to create the `App.js` component, the `handleChange` function, and the `FormComponent` to process the form data and update the URL.
+- Add the necessary React code (JSX, components, state management) to handle the form inputs, update the state based on user input, and construct the URL with query parameters on submit.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day6/daily_challenge/form/public/manifest.json
+suggestions for improvement:
+- The provided code is a `manifest.json` file, not a React component. It's completely unrelated to the chapter content, which focuses on building a React form with state management and URL parameter handling.
+- The chapter requires implementing a React component (`App.js` and `FormComponent`) that handles form input, updates state based on user interaction, and updates the URL accordingly.  This manifest file has nothing to do with that.
+- To achieve a non-zero correctness score, you need to provide the React code for `App.js` and `FormComponent` as described in the instructions.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day6/daily_challenge/form/src/App.css
+suggestions for improvement:
+- The provided CSS code is a basic React app structure. It does not implement any of the functionalities described in the challenge such as creating a stateful component, handling form input changes, or submitting data to the URL.
+- The challenge requires building a form with several input fields (text, checkbox, select), handling their changes, and updating the URL with the submitted data.  This CSS does not address any of these core requirements.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day6/daily_challenge/form/src/App.js
+suggestions for improvement:
+- The challenge explicitly requires creating a stateful component with props and handling form submission to update the URL.  The provided code handles form changes correctly but doesn't include URL parameter updating on submission.
+- The `handleFormChange` function can be simplified. The ternary operator is used redundantly; a single assignment based on `e.target.checked` is sufficient.
+- The `App.js` component should directly render the form and handle the submission to construct the URL.  The separation into `Form` and `ProcessedForm` components isn't directly required by the challenge specification and may be more complex than necessary given the scope.
+Correctness: 70%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day6/daily_challenge/form/src/Form.css
+suggestions for improvement:
+- The provided CSS only styles a form; it doesn't implement the React component logic required by the challenge.  The challenge requires creating a stateful component in `App.js`, handling form input changes with `handleChange`, rendering a `FormComponent`, and submitting data to the URL.
+- Add React component code that creates a stateful component, handles form input changes, renders the form and input values, and submits data to the URL as specified.  The current submission lacks the core React implementation required to meet the challenge objectives.
+- Implement the `handleChange` function to manage the state updates based on the form input.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day6/daily_challenge/form/src/InputForm.js
+suggestions for improvement:
+- The `Form` component doesn't handle form submission.  It needs to prevent the default form submission behavior and update the URL using `window.location.href` or similar.
+- The `handleChange` function is missing.  The instructions explicitly require a `handleChange` function to manage input changes and checkbox status.
+- The checkbox values are not correctly handled.  The instructions mention using a ternary operator to check the 'checked' status, and the current code doesn't do that.
+- Error handling (e.g., for invalid input types) is absent.
+- The CSS (`Form.css`) is missing and its impact on readability and styling cannot be evaluated.
+- Consider using controlled components for better state management instead of relying solely on the `onChange` event.
+Correctness: 70%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day6/daily_challenge/form/src/ProccessedForm.js
+suggestions for improvement:
+- The provided code only displays the form data; it doesn't handle form submission, state management, or URL parameter updates as required by the challenge instructions.
+- The component should be named `FormComponent` as specified in the instructions.
+- The `handleChange` function, crucial for updating the form's state, is missing.
+- The code lacks the functionality to update the URL with the form data on submission.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day6/daily_challenge/form/src/index.css
+suggestions for improvement:
+- The provided code is just basic CSS styling for a webpage. It does not contain any Javascript code to implement the React form as described in the challenge.
+- The challenge requires building a React component that handles form input, updates state based on user input, and submits data to the URL.  This code provides no functionality related to that.
+- Implement the React components (`App.js` and `FormComponent`), state management (`useState`), event handling (`handleChange`), and URL parameter manipulation as described in the challenge instructions.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day6/daily_challenge/form/src/index.js
+suggestions for improvement:
+- This code only provides a basic React setup.  It lacks the crucial `App.js` component and `FormComponent` which are essential to address the daily challenge. The challenge requires creating a stateful component to handle form data, a `handleChange` function to manage input changes, and form submission to update the URL parameters.
+- Add the `App.js` and `FormComponent` components with the necessary form elements and state management to process user inputs. Implement the `handleChange` function as specified in the instructions to manage the form data.  Finally, implement the URL parameter update on form submission.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day6/daily_challenge/form/src/reportWebVitals.js
+suggestions for improvement:
+- The provided code is a standard React performance reporting function using web-vitals. It's completely unrelated to the daily challenge which focuses on creating a React form that updates the URL parameters based on user input.
+- The challenge requires building a form component, handling form input changes, and updating the URL.  This code does none of those things.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day6/daily_challenge/form/src/setupTests.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
