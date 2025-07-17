@@ -1,0 +1,35 @@
+
+.mainDiv {
+    border: 2px solid black;
+    width: 500px;
+    height: 250px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+
+    background-color: purple;
+}
+
+h1 {
+    color: rgb(221, 160, 221);
+}
+
+input[type='number'] {
+    width: 70px;
+    height: 35px;
+    font-size: large;
+    margin: 5px;
+    background-color: rgb(221, 160, 221);
+}
+
+input[type='submit'] {
+    border: none;
+    border-radius: 10px;
+    background-color: dodgerblue;
+    color: white;
+
+    margin: 10px;
+    height: 28px;
+}
