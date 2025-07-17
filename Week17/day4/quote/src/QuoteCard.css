@@ -1,0 +1,33 @@
+
+.mainDiv {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px black solid;
+    align-items: center;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+
+}
+
+.authorContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+}
+
+button {
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
