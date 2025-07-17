@@ -1,0 +1,111 @@
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day2/xp/package.json
+suggestions for improvement:
+- The provided code is a `package.json` file, which defines project dependencies and scripts.  It doesn't contain any implementation of the exercises described in the Chapter Content/Questions.  To score points for correctness, the code needs to implement the React components, error boundaries, routing, and JSON handling as described in the exercises.
+- Add the actual code for `ErrorBoundary`, `HomeScreen`, `ProfileScreen`, `ShopScreen`, `PostList`, `Example1`, `Example2`, and `Example3` components.
+- Implement the JSON data fetching and posting as outlined in Exercise 2 and Exercise 4.
+- Ensure that the React Router is configured correctly to handle navigation between routes.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day2/xp/public/index.html
+suggestions for improvement:
+- The provided HTML file is a basic React app template. It doesn't contain any code related to the exercises described in the Chapter Content/Questions.  The exercises require implementing React Router, Error Boundaries, JSON handling, and making API calls.  This HTML file provides only the basic structure for a React application.
+- Add the necessary JavaScript files (App.js, ErrorBoundary.js, PostList.js, Example1.js, Example2.js, Example3.js etc.) and implement the logic for each exercise as detailed in the instructions.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day2/xp/public/manifest.json
+suggestions for improvement:
+- This JSON file is a manifest file for a Create React App, not a solution to any of the exercises. It defines app icons, start URL, theme color, etc., which are unrelated to the exercises' requirements of implementing React Router, Error Boundaries, JSON data handling, and making API calls.
+- The provided JSON doesn't contain any React code or implementation details for the exercises' components (ErrorBoundary, HomeScreen, ProfileScreen, ShopScreen, PostList, Example1, Example2, Example3).
+- To receive a higher correctness score, please provide the actual React code that addresses the exercises.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day2/xp/src/App.css
+suggestions for improvement:
+- The provided CSS code is a basic React app structure and does not implement any of the functionalities described in the chapter content (React state, event handlers, React Router, Error Boundary, JSON handling).  It's a starting point for a React app, but it lacks the essential components and logic needed to complete the exercises.
+- Implement the `ErrorBoundary` component as a class component with `componentDidCatch()` to handle errors.
+- Install `react-router-dom` and use its components (`BrowserRouter`, `Routes`, `Route`, `NavLink`) to create navigation.
+- Create the `HomeScreen`, `ProfileScreen`, and `ShopScreen` components, with `ShopScreen` intentionally throwing an error.
+- Wrap the functional components with the `ErrorBoundary` component.
+- Create the `PostList` component to read and display data from a JSON file.
+- Create `Example1`, `Example2`, and `Example3` components to parse and display data from a more complex JSON file.
+- Implement the `async/await` fetch function to POST JSON data to a webhook URL and handle the response.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day2/xp/src/App.js
+suggestions for improvement:
+- The `ErrorBoundary` component should be implemented to handle errors gracefully, rather than just setting a state variable. It should render a fallback UI when an error occurs.
+- The `ShopScreen` component should ideally provide more informative error handling, possibly including a message describing the error or prompting for recovery.
+- Exercise 2 (PostList.js) and Exercise 3 (Example1, Example2, Example3) are missing in the provided code.  The code should include these components and their respective implementations to fully address the requirements.
+- Consider adding loading indicators or states to handle asynchronous operations, particularly in `postData` and when fetching data for `PostList`, `Example1`, `Example2`, and `Example3`.
+Correctness: 90%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day2/xp/src/ErrorBoundary.js
+suggestions for improvement:
+- The `ErrorBoundary` component is correctly implemented and addresses the requirements of Exercise 1. However, it could be improved by adding more informative error messages, potentially including the error and errorInfo details for debugging purposes.  This would aid in identifying and resolving the error.
+- Exercise 2, 3, and 4 are missing. The provided code only addresses part of Exercise 1 (ErrorBoundary).  The JSON handling and POST request parts are absent.
+Correctness: 90%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day2/xp/src/Example1.js
+suggestions for improvement:
+- The code correctly renders the SocialMedias array from the JSON data. However, it doesn't handle potential errors if the data is improperly formatted or missing.  Adding error handling would improve robustness.
+- The use of `key={index}` is technically not ideal; it's better to use a unique identifier from the data itself if available.  If there's no unique id within the `SocialMedias` array element, consider using a library function like `uuid` to generate unique keys. This would improve the efficiency and correctness of react's rendering and reconciliation process.
+- For `Example2` and `Example3`, the code is missing. The evaluation only assesses the provided `Example1` component.
+Correctness: 80%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day2/xp/src/Example2.js
+suggestions for improvement:
+- Consider using functional components instead of class components for `Example2` and `SkillSet` if you're using React 16.8 or later.  This would simplify the code and improve readability.
+- Add error handling to the `map` functions in both `Example2` and `SkillSet` to gracefully handle potential issues with the JSON data. For example, check if `data.Skills` or `item.SkillSet` exists before mapping.
+- The performance could be slightly improved by memoizing the `SkillSet` component if the props don't change frequently. This would prevent unnecessary re-renders.
+Correctness: 100%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day2/xp/src/Example3.js
+suggestions for improvement:
+- Consider using more semantic HTML tags.  Instead of `<div>` for the `Experience` component, you might use `<article>` to represent a self-contained piece of content.
+- Add error handling for cases where `data.Experiences` might be undefined or empty. This could prevent potential errors if the JSON data is not loaded correctly.
+- The performance could be slightly improved by memoizing the `Experience` component if the props don't change frequently. This would avoid unnecessary re-renders.
+- Add loading indicator while waiting for JSON data
+Correctness: 100%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day2/xp/src/PostList.js
+suggestions for improvement:
+- The `PostList` component currently only displays the first two posts from the `data.json` file.  It should iterate through all the posts in the JSON data to display all the titles and content.
+- Consider using a more dynamic approach, such as mapping over the `data` array to render the `Item` components. This will make the code more scalable and easier to maintain if the number of posts changes.
+Correctness: 80%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day2/xp/src/data1.json
+suggestions for improvement:
+- This JSON data is unrelated to the exercises described in the chapter content. The exercises involve creating React components, using React Router, implementing an error boundary, fetching and displaying JSON data from various sources, and posting JSON data using fetch.
+- The provided JSON is a simple array of objects, suitable for Exercise 2 or a simplified version of Exercise 3, but it doesn't encompass the complexity required by Exercise 3 or the interaction with a webhook needed for Exercise 4.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day2/xp/src/data2.json
+suggestions for improvement:
+- The provided code is a JSON object representing data, not React code.  It doesn't address any of the exercises described in the chapter content (React Router, Error Boundaries, JSON display and POST requests).
+- To receive a proper evaluation, please provide the React code that implements the exercises described in the document.  This JSON data would be *used* by that React code.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day2/xp/src/index.css
+suggestions for improvement:
+- The provided code is just CSS styling for a webpage.  It does not address any of the exercises described in the Chapter Content/Questions.  It needs to be replaced with JavaScript code that implements the React components, routing, error boundaries, and JSON handling specified in the exercises.
+- The exercises require creating several React components (`ErrorBoundary`, `HomeScreen`, `ProfileScreen`, `ShopScreen`, `PostList`, `Example1`, `Example2`, `Example3`), handling routing with `react-router-dom`, fetching and displaying JSON data, and implementing error handling.  None of this is present in the submitted code.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day2/xp/src/index.js
+suggestions for improvement:
+- The provided code is only the root index.js file of a React application. It lacks the crucial implementations for Exercises 1, 2, 3, and 4 described in the chapter content.  The code only renders the App component and includes a standard React reportWebVitals function, neither of which directly addresses any of the exercises.
+- To receive a higher correctness score, the code should include the `ErrorBoundary`, `HomeScreen`, `ProfileScreen`, `ShopScreen`, `PostList`, `Example1`, `Example2`, and `Example3` components along with the necessary React Router and JSON handling logic as detailed in the exercises.
+- Add the missing components and their implementations.  Specifically implement the functionality to fetch, display, and post JSON data as required in the exercises. This includes setting up routing, implementing error handling, and demonstrating JSON data parsing and manipulation.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day2/xp/src/reportWebVitals.js
+suggestions for improvement:
+- This code is entirely unrelated to the chapter content. It's a React performance measurement utility using web-vitals.
+- The provided exercises focus on React Router, Error Boundaries, JSON handling, and making API calls.  This code doesn't address any of these topics.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day2/xp/src/setupTests.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
