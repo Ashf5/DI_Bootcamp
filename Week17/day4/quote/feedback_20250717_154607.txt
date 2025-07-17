@@ -1,0 +1,89 @@
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day4/quote/package.json
+suggestions for improvement:
+- This JSON file is a `package.json` file for a React project.  It does not contain any code that implements the quote generator.  It only specifies dependencies and scripts needed for a React project.
+- The instructions require building a React application that fetches quotes from a provided file, displays them randomly, and changes colors on button clicks. This `package.json` only sets up the environment for such an application, it doesn't build the application itself.
+- Add React components and logic to fulfill the requirements of the project.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day4/quote/public/index.html
+suggestions for improvement:
+- This HTML file is just a basic React app template.  It doesn't contain any of the React code needed to create the random quote generator.  You need to implement the React components, state management, and event handling to fulfill the project requirements.
+- Add the React code (components, state, event handlers) to create the quote generator.  The HTML provided is only the basic structure; the actual functionality needs to be implemented in JavaScript using React.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day4/quote/public/manifest.json
+suggestions for improvement:
+- This JSON represents a `manifest.json` file for a React application. It's entirely unrelated to the task of building a random quote generator as described in the Chapter Content/Questions.  The instructions clearly specify building a React app with specific functionality (displaying quotes, changing colors, handling button clicks). This JSON only defines app metadata (icons, display settings, etc.).
+- To receive a higher correctness score, please provide the React code that implements the quote generator.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day4/quote/src/App.css
+suggestions for improvement:
+- The provided CSS code is a basic React app structure, but it doesn't implement the random quote generator functionality described in the Chapter Content/Questions.  It lacks the core components (quote display, author display, button, and associated logic) needed to fulfill the assignment.
+- The CSS is well-formatted and readable, but it's irrelevant to the assignment's core functionality.  Styles should be added to reflect the design shown in the image.
+- Add React components to handle the quote data, display, and button click events.  Import the quote data from the provided file.
+- Implement the random quote generation logic, ensuring that quotes are not repeated.
+- Implement random background color changes using Javascript.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day4/quote/src/App.js
+suggestions for improvement:
+- The `handleNext` function could be improved by directly using the index `random` to access the quote object from `quotes` array instead of comparing `newQuote` with `currentQuote`. This simplifies the logic and improves efficiency.
+- Add error handling for the edge case where `quotes` array is empty. This will prevent errors and improve robustness.
+- Consider using a more descriptive variable name than `state` for the state object.  Something like `currentQuote` would be more clear.
+- The color array is hardcoded.  It could be externalized into a separate config file or made configurable to allow for easier modification and extension.
+Correctness: 95%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day4/quote/src/App.test.js
+suggestions for improvement:
+- The provided code is a React test, not a React application implementing a random quote generator.  It does not address any of the requirements outlined in the Chapter Content/Questions.
+- The test checks for the existence of text 'learn react', which is not relevant to the assignment.
+- The code needs to be replaced with a complete React application that fetches quotes, displays them randomly, and changes colors on button clicks.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day4/quote/src/QuoteCard.css
+suggestions for improvement:
+- The provided code is only CSS.  It does not implement any React components, state management, event handlers, or the core functionality of a random quote generator as described in the Chapter Content/Questions.
+- The CSS is reasonably readable and well-structured.  However, without the accompanying React code, it's impossible to assess how well it integrates with the application's structure.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day4/quote/src/QuoteCard.js
+suggestions for improvement:
+- The code doesn't handle the 'no duplicate quotes' requirement.  It needs logic to ensure that the next quote selected is different from the current one.
+- Random color generation should be handled within the `QuoteCard` component, rather than passing a pre-generated color as a prop.  This makes the component more self-contained and reusable.
+- Consider using a more robust method for random color generation, perhaps using a library or more sophisticated algorithm to ensure a wider range of colors and avoid potentially clashing combinations.
+Correctness: 85%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day4/quote/src/index.css
+suggestions for improvement:
+- This code only provides basic CSS styling.  It does not implement any of the functionality required by the assignment (creating a React app that fetches and displays quotes, handles button clicks, and changes colors dynamically).
+- The assignment requires a React application, but no React code is present.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day4/quote/src/index.js
+suggestions for improvement:
+- The provided code is only a basic React setup. It doesn't contain the actual implementation of the random quote generator.
+- The `App.js` and the quote data are missing, which are crucial for solving the problem.
+- Add the logic to fetch a random quote from the provided data, update the UI, and change colors.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day4/quote/src/quotes.js
+suggestions for improvement:
+- This code only provides an array of quotes.  It doesn't contain any React code to create the random quote generator application as described in the instructions.  The instructions explicitly ask to build a React application.
+- Add React components to display the quote, author, and button.  Implement state management to track the current quote and background color.
+- Implement event handlers for the button click to generate a new random quote and update the background and text colors.
+- Ensure that the same quote is not displayed twice in a row.  You'll need to implement logic to track which quotes have already been displayed.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day4/quote/src/reportWebVitals.js
+suggestions for improvement:
+- The provided code is a React performance measurement function using web-vitals. It has nothing to do with creating a random quote generator as specified in the chapter content.
+- The code is well-structured and easy to understand.  The use of async/await is good practice for performance.
+- The code doesn't handle any errors that might occur during the import or execution of `web-vitals`.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day4/quote/src/setupTests.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----

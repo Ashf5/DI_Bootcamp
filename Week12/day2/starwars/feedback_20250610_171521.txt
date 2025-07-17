@@ -1,0 +1,27 @@
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week12/day2/starwars/index.html
+suggestions for improvement:
+- Add more robust error handling.  The current error handling only displays a message; it doesn't handle potential issues like network errors more gracefully.
+- Improve the styling of the error and loading messages.  The current implementation is functional but visually basic.
+- Better separation of concerns. The JavaScript could be more modular, separating data fetching, DOM manipulation, and error handling into distinct functions.
+- Add input validation. Although not explicitly stated, validating the API response to ensure it contains expected data before displaying it would improve the robustness of the application.
+- Use more descriptive variable names.  Names like `info_div` are somewhat vague.  More descriptive names (e.g., `characterInfoDiv`) improve readability.
+Correctness: 85%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week12/day2/starwars/main.js
+suggestions for improvement:
+- Improve error handling: Provide more specific error messages to the user, indicating the type of error encountered (e.g., network error, data parsing error).  Consider a more user-friendly error display than just 'Oh No! That person isnt available'.
+- Enhance loading indicator: The current loading indicator is a simple spinner. Consider adding a textual message like 'Loading...' to improve user experience.
+- Refactor `returnData` function: The `returnData` function is relatively simple and could be streamlined.  It could be made more concise and readable.
+- Add input validation: While not explicitly stated, adding input validation to prevent unexpected behavior would enhance robustness.
+Correctness: 95%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week12/day2/starwars/styles.css
+suggestions for improvement:
+- The provided code only includes CSS styling.  It lacks the HTML structure and JavaScript functionality required to fetch data from the Star Wars API, display it on the page, handle loading states, and manage errors as specified in the project instructions.
+- Add HTML elements to display character information (name, height, gender, birth year, homeworld).
+- Implement JavaScript functions to fetch data using the Fetch API, handle the response, update the DOM, and display loading/error messages.  Use `async/await` for cleaner asynchronous code.
+- Include error handling to gracefully manage cases where the API request fails.
+- Implement a button click event listener to trigger the data fetching and display update.
+- Integrate Font Awesome for the loading animation as specified.
+Correctness: 0%
+-----

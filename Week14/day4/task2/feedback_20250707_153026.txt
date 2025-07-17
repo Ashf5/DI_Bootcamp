@@ -1,0 +1,50 @@
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week14/day4/task2/app.js
+suggestions for improvement:
+- Checker failed to provide a response.
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week14/day4/task2/controllers/userController.js
+suggestions for improvement:
+- Checker failed to provide a response.
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week14/day4/task2/models/userModel.js
+suggestions for improvement:
+- Checker failed to provide a response.
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week14/day4/task2/models/users.json
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week14/day4/task2/package.json
+suggestions for improvement:
+- Checker failed to provide a response.
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week14/day4/task2/public/login.html
+suggestions for improvement:
+- Checker failed to provide a response.
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week14/day4/task2/public/main.js
+suggestions for improvement:
+- Checker failed to provide a response.
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week14/day4/task2/public/main2.js
+suggestions for improvement:
+- Checker failed to provide a response.
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week14/day4/task2/public/register.html
+suggestions for improvement:
+- Checker failed to provide a response.
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week14/day4/task2/routes/userRoutes.js
+suggestions for improvement:
+- Checker failed to provide a response.
+Correctness: N/A%
+-----
