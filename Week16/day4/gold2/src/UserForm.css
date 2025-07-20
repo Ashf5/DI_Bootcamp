@@ -1,0 +1,25 @@
+
+.container {
+    
+    margin-right: auto;
+    margin-left: auto;
+    width: 300px;
+}
+
+.userForm {
+    text-align: center;
+    background-color: lightgray;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+h1 {
+    color: darkslategrey;
+}
+
+.container input {
+    border-radius: 4px;
+    border: none;
+    padding: 2px;
+    margin: 2px;
+}
