@@ -1,0 +1,155 @@
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day4/mandatory/counter/package.json
+suggestions for improvement:
+- The provided code is a `package.json` file for a React project. It does not contain any implementation of the exercises described in the Chapter Content/Questions.  It only sets up the project dependencies and scripts.  To receive a higher correctness score, you need to provide the actual React component code for the theme switcher and character counter.
+- Add the actual React code for Exercise 1 (Theme Switcher) and Exercise 2 (Character Counter) as separate files (e.g., `ThemeSwitcher.js`, `CharacterCounter.js`). These should be included in your submission.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day4/mandatory/counter/public/index.html
+suggestions for improvement:
+- This HTML file is a basic React app template. It doesn't contain any of the code necessary to complete Exercises 1, 2, or 3.  You need to create the React components and implement the logic described in each exercise within the `src` folder of your project, not in this `index.html` file.
+- Add the `ThemeContext.js`, `App.js` (for Exercise 1),  and the necessary components for Exercises 2 and 3. Implement the logic using `useContext`, `useRef`, and `useReducer` as specified in the instructions.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day4/mandatory/counter/public/manifest.json
+suggestions for improvement:
+- The provided code is a `package.json` file for a React application, not a solution to the exercises.  It defines app metadata (icons, theme color, etc.) but contains no React components or logic related to theme switching, character counting, or a todo list.
+- To receive a meaningful assessment, please provide the actual React code implementing the exercises.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day4/mandatory/counter/src/App.css
+suggestions for improvement:
+- This CSS code is unrelated to the exercises described in the Chapter Content/Questions.  It provides styling for a React app, but doesn't implement any of the requested functionality (theme switcher, character counter, or todo list).
+- The provided CSS is well-formatted and readable.  However, it's not relevant to the exercises.
+- Add the actual React code that implements the theme switcher, character counter, and todo list as described in the exercises.  This CSS is only styling; the core functionality is missing.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day4/mandatory/counter/src/App.js
+suggestions for improvement:
+- The provided code does not address any of the exercises (Theme Switcher, Character Counter, or Todo List) described in the Chapter Content/Questions.  It only renders a component called 'Counter', which is not defined within the provided code snippet.
+- To receive a non-zero correctness score, you need to implement at least one of the exercises detailed in the chapter content.  The code should demonstrate the use of useContext, useState, useRef, or useReducer as specified.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day4/mandatory/counter/src/App.test.js
+suggestions for improvement:
+- The provided code is a test file from React Testing Library, not an implementation of the exercises described in the Chapter Content/Questions.  It doesn't address any of the exercises (Theme Switcher, Character Counter, or Todo List).
+- The test checks for the existence of text containing 'learn react', which is unrelated to the chapter's tasks.  This test would need to be replaced with tests that specifically verify the functionality of the Theme Switcher, Character Counter, and Todo List components.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day4/mandatory/counter/src/Counter.js
+suggestions for improvement:
+- The code could benefit from using functional updates in `useState` for better predictability and to avoid potential issues with stale closures if more complex logic were added later.  For instance, change `updateLength(inputRef.current.value.length);` to `updateLength(prevLength => inputRef.current.value.length);`
+- Adding a label to the input element improves accessibility.  `<label htmlFor='text-input'>Enter text:</label><input type='text' id='text-input' ...`
+Correctness: 100%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day4/mandatory/counter/src/index.css
+suggestions for improvement:
+- The provided code is just CSS styling for a webpage. It does not implement any of the React components or functionality described in the exercises (Theme Switcher, Character Counter, or Todo List).  It needs to be replaced with actual React code to address the exercises.
+- Add ThemeContext.js, App.js, and other necessary files with React code to fulfill the exercise requirements.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day4/mandatory/counter/src/index.js
+suggestions for improvement:
+- The provided code is only the basic setup for a React application. It doesn't contain any of the components or logic required for exercises 1, 2, or 3 described in the chapter content.
+- Add the necessary components (`ThemeContext.js`, `App.js` for Exercise 1,  `CharacterCounter.js` for Exercise 2, and `TodoList.js` for Exercise 3) to implement the exercises.
+- Implement the theme switching logic using `useContext` and `useState` for Exercise 1.
+- Use `useRef` to implement the character counter in Exercise 2.
+- Implement the todo list functionality using `useReducer` for Exercise 3.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day4/mandatory/counter/src/reportWebVitals.js
+suggestions for improvement:
+- This code is completely unrelated to the exercises described in the Chapter Content/Questions. It's a standard React performance measurement function using web-vitals.
+- The code itself is well-structured and readable.  The use of promises with `then` is appropriate for handling asynchronous operations.
+- The performance is generally good; the import of `web-vitals` is done lazily. However, it would be better to conditionally run this only in production mode, avoiding unnecessary overhead during development.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day4/mandatory/counter/src/setupTests.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day4/mandatory/dark/package.json
+suggestions for improvement:
+- This JSON file is a `package.json` file for a React project. It doesn't contain any code that addresses the exercises described in the Chapter Content/Questions.  It only sets up the project dependencies and scripts.  To receive a correctness score, the JSON should be replaced with the actual React code that implements the theme switcher, character counter, and todo list. 
+- Add the actual React code for the three exercises (Theme Switcher, Character Counter, and Todo List) to get a correctness score.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day4/mandatory/dark/public/index.html
+suggestions for improvement:
+- The provided code is an HTML file, a basic template for a React application. It does not contain any React components or the implementation for the exercises (Theme Switcher, Character Counter, Todo List).  To assess the exercises, please provide the actual React code for each.
+- Add React code for the Theme Switcher, Character Counter, and Todo List exercises as separate `.js` files (e.g., `ThemeSwitcher.js`, `CharacterCounter.js`, `TodoList.js`).
+- Structure the React code according to the instructions and hints provided in the Chapter Content/Questions.  Include necessary imports, state management, and event handling.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day4/mandatory/dark/public/manifest.json
+suggestions for improvement:
+- The provided code is a `package.json` file for a React application, not the React code itself for the exercises.  It doesn't implement any of the theme switcher, character counter, or to-do list functionalities described in the chapter content.
+- The `package.json` file is well-formatted and contains standard information for a React app, but it's not relevant to the assessment of the coding exercises.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day4/mandatory/dark/src/App.css
+suggestions for improvement:
+- The provided CSS only styles basic HTML elements.  It needs to be integrated with the React components from exercises 1 and 2 to actually implement the theme switching and character counter functionality described in the chapter.
+- Exercise 1 (Theme Switcher) and Exercise 2 (Character Counter) are missing. The CSS provided is only a partial solution and doesn't implement the core functionality of the exercises.
+- Add comments to explain the purpose of CSS rules and selectors, especially concerning the `:root` and `.dark` classes.
+Correctness: 80%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day4/mandatory/dark/src/App.js
+suggestions for improvement:
+- The provided code does not implement the theme switcher or character counter exercises as described in the chapter content. It only renders a component called `Dark` within a `ThemeProvider`.  There's no functionality to actually switch themes or count characters. The exercises explicitly asked for `useContext` and `useRef` which are not used.
+- Add a ThemeSwitcher component as described in Exercise 1, including a button to toggle between light and dark modes and applying theme styles using useContext.
+- Add a CharacterCounter component as described in Exercise 2, using useRef to track and display the character count of a text input in real-time.
+- The `Dark` component's implementation is not shown, making it impossible to assess its correctness with respect to the theme switching requirements.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day4/mandatory/dark/src/App.test.js
+suggestions for improvement:
+- The provided code is a test file for React using `@testing-library/react`.  It does not implement any of the exercises (Theme Switcher, Character Counter, or Todo List) described in the chapter content.
+- The test itself is simple and readable, but it's irrelevant to the exercises.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day4/mandatory/dark/src/Dark.js
+suggestions for improvement:
+- The provided code snippet only shows a partial implementation of Exercise 1.  It uses a `useTheme` hook and a theme switcher button, aligning with the core objective. However, it lacks the complete `ThemeContext` and the styling aspects needed to fully demonstrate a theme switch.
+- The `changeTheme` function is not defined within the provided `Dark` component. It needs to be imported or defined correctly from the `ThemeContext` file.
+- The className is directly using the theme ('light' or 'dark').  This is a functional approach, but it would be better to have CSS classes that define styling based on the theme. This would improve maintainability.
+- The Exercise 1 instructions specifically mention the `useContext` and `useState` hooks. While the provided code *indirectly* utilizes `useState` through the `useTheme` hook, this dependency is not explicitly showcased.
+Correctness: 80%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day4/mandatory/dark/src/ThemeContext.js
+suggestions for improvement:
+- The provided code only implements the theme context and switching mechanism.  It lacks the actual components (ThemeSwitcher, App) to demonstrate the usage of the context and styling changes based on theme. The instructions explicitly require creating a ThemeSwitcher component and applying theme styles.
+- Add error handling in `useTheme` to provide more informative feedback if the ThemeProvider is not found.
+Correctness: 80%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day4/mandatory/dark/src/UserForm.js
+suggestions for improvement:
+- The provided code does not address any of the exercises (Theme Switcher, Character Counter, or Todo List) described in the chapter content. It implements a simple user registration form, which is unrelated to the specified tasks.
+- Add error handling for form submission (e.g., using a state variable to track form validity and provide feedback to the user).
+- Consider adding input validation to ensure the entered data meets the required format (e.g., email validation).
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day4/mandatory/dark/src/index.css
+suggestions for improvement:
+- The provided code is just CSS styling, not a React application.  It does not address any of the exercises (Theme Switcher, Character Counter, or Todo List).
+- To receive a correctness score greater than 0, you need to provide React code that implements the exercises as described in the chapter content.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day4/mandatory/dark/src/index.js
+suggestions for improvement:
+- The provided code is only the basic boilerplate for a React application. It does not contain any of the components or logic described in Exercises 1, 2, or 3.  It needs the implementation of `ThemeContext.js`, `App.js`, and the character counter and todo list components.
+- Add the implementation of `ThemeContext.js`, `App.js`, `CharacterCounter.js`, and `TodoList.js` as described in the exercises to achieve the functionality.
+- The `reportWebVitals` function is a standard CRA inclusion and serves a useful purpose, but is not relevant to the scoring of the exercises.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day4/mandatory/dark/src/reportWebVitals.js
+suggestions for improvement:
+- This code is unrelated to the exercises described in the Chapter Content/Questions. It's a React performance monitoring function using web-vitals.
+- The code itself is well-structured and readable.  The use of async/await (implied by `.then()`) is good practice for handling asynchronous operations.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day4/mandatory/dark/src/setupTests.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
