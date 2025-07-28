@@ -1,0 +1,88 @@
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day2/daily_challenge/client/package.json
+suggestions for improvement:
+- This JSON file is a `package.json` file for a React project. It does not contain any code that addresses the requirements of the chapter content.  It only defines project dependencies and scripts. The actual implementation of the Express server and React components is missing.
+- Add server.js and App.js code to demonstrate the functionality described in the chapter.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day2/daily_challenge/client/public/index.html
+suggestions for improvement:
+- The provided code is only an HTML file for a React application.  It lacks the necessary `server.js` file for the Express server and the `App.js` file containing the React components and logic to fetch and display data as described in the instructions.  The instructions require both a server-side and client-side implementation.
+- Implement the Express server (`server.js`) with GET and POST routes as specified.
+- Create the React app (`App.js`) with the form, fetching logic using `async/await`, and display of fetched data.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day2/daily_challenge/client/public/manifest.json
+suggestions for improvement:
+- Checker failed to provide a response.
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day2/daily_challenge/client/src/App.css
+suggestions for improvement:
+- This code is just CSS styling for a React app. It does not implement any of the functionality described in the Chapter Content/Questions, such as creating an Express server, fetching data using `componentDidMount`, creating a form to POST data, or handling the POST request on the server-side.
+- Add server-side code (server.js) to handle GET and POST requests.
+- Add client-side code (App.js) to fetch data using async/await and create a form to send POST requests.
+- Implement the form submission functionality with async/await.
+- Display received messages as specified in the instructions.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day2/daily_challenge/client/src/App.js
+suggestions for improvement:
+- Improve error handling: The code doesn't handle network errors or server errors.  Add `try...catch` blocks to handle potential exceptions during the fetch calls.
+- Improve form submission:  The form's submit button uses `onClick` instead of the form's default submit behavior. Consider using the form's `onSubmit` event handler for better accessibility and maintainability.
+- Use state more effectively: Instead of using a single state object to store both messages, consider using separate state variables for the GET and POST responses. This enhances readability and maintainability.
+- Sanitize user input: Before sending the input to the server and displaying it, sanitize it to prevent XSS vulnerabilities. (e.g., using DOMPurify).
+- Add loading indicator: While fetching data, display a loading indicator to enhance user experience.
+- More descriptive variable names: `text` could be more explicit, like `getMessage` or `postResponse`.
+Correctness: 95%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day2/daily_challenge/client/src/App.test.js
+suggestions for improvement:
+- The provided code is a React test using `@testing-library/react`. It does not implement the Express server or the React app functionality described in the chapter content.  It needs to be replaced with code that creates an Express server and a React app that interacts with it.
+- The test checks for the presence of 'learn react', which is a default phrase in create-react-app, and is not related to the assignment.
+- Implement Part I: Create a server.js file with a GET request to /api/hello. Create an App.js file that fetches data from this route and displays it.
+- Implement Part II: Add a form to App.js to POST data to /api/world.  Modify server.js to handle this POST request and respond appropriately.
+- Use async/await for fetching and posting data, as specified in the instructions.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day2/daily_challenge/client/src/index.css
+suggestions for improvement:
+- The provided code is just CSS styling and does not implement any of the functionality described in the chapter content (creating an Express server, a React app, handling GET and POST requests, etc.).  It needs to be replaced with actual server-side (Express.js) and client-side (React) code.
+- Add server-side code in a `server.js` file to handle GET and POST requests as specified.
+- Add client-side React code in `App.js` to make requests to the server and display the responses.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day2/daily_challenge/client/src/index.js
+suggestions for improvement:
+- This code only provides a basic React application setup.  It lacks the server-side Express code and the React components required to fulfill the chapter's instructions (creating a GET and POST endpoint, fetching data, and displaying it in a form).
+- Add a `server.js` file with Express routes for `/api/hello` (GET) and `/api/world` (POST).
+- Implement a React form in `App.js` to handle user input and send POST requests.
+- Implement the `componentDidMount()` lifecycle method in `App.js` to fetch data from the `/api/hello` endpoint using `async/await`.
+- Display the fetched data and the POST response in the React application.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day2/daily_challenge/client/src/reportWebVitals.js
+suggestions for improvement:
+- This code is a React performance measurement utility using web-vitals. It has nothing to do with the chapter's instructions which involve creating an Express server and a React app that interacts with it via GET and POST requests.
+- The provided code should be replaced with code that implements the Express server and React app as described in the chapter.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day2/daily_challenge/client/src/setupTests.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day2/daily_challenge/server/package.json
+suggestions for improvement:
+- This JSON file is a `package.json` file, defining project dependencies and metadata. It doesn't contain any code that implements the Express server or React app functionality described in the chapter content.  The instructions require creating server.js and App.js files with specific GET and POST request handling and form creation in React.
+- Create a `server.js` file to handle the Express server logic (GET /api/hello and POST /api/world routes).
+- Create an `App.js` file in a React application to fetch data from the GET route and send data to the POST route using a form.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day2/daily_challenge/server/server.js
+suggestions for improvement:
+- Add error handling for the GET request.  While the GET request is simple, robust code should handle potential errors (e.g., database errors if it were fetching data from a database).
+- Improve input sanitization in the POST request. The current implementation trusts the client's input completely. Sanitize the input to prevent potential vulnerabilities like Cross-Site Scripting (XSS).  For example, use a library like DOMPurify (if client-side sanitization is needed) or encode the input on the server-side before sending it back in the response.
+- Add more comprehensive logging.  Log the request method and URL for easier debugging and monitoring.
+- Consider using environment variables for the port number instead of hardcoding it.
+Correctness: 90%
+-----
