@@ -1,0 +1,58 @@
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day4/mandatory/blog-api/package.json
+suggestions for improvement:
+- The provided code is only a `package.json` file.  It does not contain the actual implementation of the Express APIs described in Exercises 1, 2, and 3.  The exercises require creating `server.js` (or `app.js`), implementing CRUD operations, error handling, and potentially using Axios.  The `package.json` correctly sets up the project structure and dependencies but doesn't demonstrate any of the required functionality.
+- Implement the server.js (or app.js) file with the Express routes and functionality as described in Exercises 1, 2, and 3.
+- Add error handling for cases such as missing book IDs or failed database operations.
+- For Exercise 3, implement the dataService.js module to fetch data from the JSONPlaceholder API using Axios.
+Correctness: 20%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day4/mandatory/blog-api/server.js
+suggestions for improvement:
+- Improve error handling to provide more specific error messages, including details about the error.  For example, instead of 'improper data received', specify which fields are missing or invalid.
+- Implement input validation to prevent potential vulnerabilities, such as SQL injection (although not directly applicable here since it's an in-memory data store).
+- Consider using a more robust data storage solution than an in-memory array for production environments (e.g., a database).
+- Add logging to track requests and errors for debugging and monitoring purposes. 
+- The `PUT` route updates the object in place, this means the original object is mutated. It would be better to create a copy of the object and update that copy, keeping the original object untouched.
+- The code lacks comprehensive testing. Unit tests should be written to validate the functionality of each endpoint.
+Correctness: 95%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day4/mandatory/book-api/app.js
+suggestions for improvement:
+- The code implements CRUD operations for a book API, but it doesn't follow the structure of Exercises 1 and 3.  It only partially addresses Exercise 2.
+- The `data` array is used in-memory; this is not a persistent solution. Consider using a database for production.
+- Error handling is decent, but more robust validation and handling of unexpected inputs are needed.
+- Input sanitization is missing, making it vulnerable to injection attacks.
+- The code lacks modularity.  Consider separating the route handlers into separate files for better organization.
+- Add comprehensive test cases to ensure the functionality works as expected and to aid in future maintenance.
+Correctness: 85%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day4/mandatory/book-api/package.json
+suggestions for improvement:
+- This is a `package.json` file, not an implementation of the exercises.  It only defines project dependencies.  No actual code for the three exercises (blog API, book API, CRUD API with Axios) is provided.
+- The exercises require creating `server.js`, `app.js`, and `dataService.js` files with Express.js and Axios code to handle the specified API routes and data fetching.  This file does not contain any of that code.
+- Add the actual code implementations for each exercise to receive a correctness score.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day4/mandatory/crud-api/app.js
+suggestions for improvement:
+- The code only implements a GET /posts route, lacking the other CRUD operations (POST, PUT, DELETE) specified in Exercise 1 and partially in Exercise 2.  Exercise 1 and 2 explicitly require all CRUD operations.
+- Error handling could be more robust.  Consider specific error handling for different HTTP errors from Axios (e.g., 404, network errors).
+- The code uses a simple `if (data)` check; it's better to check for specific properties of the `data` object to ensure that the response is valid before sending.
+- The data is fetched from an external API (JSONPlaceholder) in Exercise 3, not a local in-memory data array as required for Exercise 1 and 2.  Exercise 1 and 2 specifically ask to create a 'data' array.
+- Security improvements should be added, such as input sanitization if accepting user-supplied data in the future, and protection against common attacks, especially if this were to be expanded to include POST, PUT, DELETE methods.
+Correctness: 80%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day4/mandatory/crud-api/data/dataService.js
+suggestions for improvement:
+- Add more robust error handling in `fetchPosts`.  Instead of just logging the error and returning `undefined`, consider throwing a custom error with more context (e.g., the HTTP status code) to allow the calling function to handle different error scenarios more effectively.
+- Consider adding a timeout to the `axios.get` request to prevent indefinite blocking if the JSONPlaceholder API is unavailable.
+- The comments could be slightly improved for clarity. For instance, instead of 'Error fetching data from jsonplaceholder', a more descriptive comment could be used like 'Failed to fetch posts from JSONPlaceholder API: {error message}'.
+Correctness: 100%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day4/mandatory/crud-api/package.json
+suggestions for improvement:
+- This JSON only represents a `package.json` file.  It does not contain any code implementing the exercises described in the Chapter Content/Questions.  The exercises require creating Express.js servers with specific routes for CRUD operations on blog posts and books, and using Axios to fetch data from an external API. This `package.json` only sets up the project dependencies; no actual server-side code is provided.
+- Add the actual `server.js`, `app.js`, and `dataService.js` files with the implementation of Exercises 1, 2, and 3 respectively.
+- Implement error handling as specified in Exercise 1.
+Correctness: 0%
+-----
