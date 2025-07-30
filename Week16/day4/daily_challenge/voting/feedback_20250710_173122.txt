@@ -1,0 +1,70 @@
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day4/daily_challenge/voting/package.json
+suggestions for improvement:
+- This JSON file is a `package.json` file.  It describes project dependencies and scripts, not the React code itself. The chapter requires the creation of a React voting app within `App.js`. This file provides no code related to that task.
+- Provide the `App.js` file containing the React code to assess the correctness of the voting app implementation.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day4/daily_challenge/voting/public/index.html
+suggestions for improvement:
+- The provided code is an HTML file, a basic template for a React application.  It doesn't contain any React code (JSX, components, or state management) to implement the voting app as described in the instructions.  The instructions explicitly state that the app should be built within `App.js`, which is not included here.
+- Add `App.js` and implement the React components and state logic to create the voting app according to the instructions.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day4/daily_challenge/voting/public/manifest.json
+suggestions for improvement:
+- This JSON doesn't contain any React code.  It's a manifest file for a web app, likely used for configuring icons and other metadata for a progressive web app (PWA).
+- To address the challenge, you need to provide React code that creates components, uses state (`useState`), and handles user interactions (button clicks) to update the vote counts.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day4/daily_challenge/voting/src/App.css
+suggestions for improvement:
+- The provided code is CSS, not JavaScript.  The challenge requires a React app using JSX, components, and state management to create a voting app. This CSS snippet is irrelevant to the task.
+- No React code is provided to implement the voting app's functionality (managing state, handling clicks, rendering components).
+- Add React code to create the voting app as described in the instructions.  This includes setting up the initial state with language objects, creating components to display the languages and their vote counts, and implementing a function to handle vote increments.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day4/daily_challenge/voting/src/App.js
+suggestions for improvement:
+- The code could be slightly improved by using functional updates for state updates to prevent potential issues with stale closures.
+- Consider adding error handling or input validation, although not explicitly required, it would enhance robustness.
+Correctness: 100%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day4/daily_challenge/voting/src/App.test.js
+suggestions for improvement:
+- This code is a test file (App.test.js presumably), not the implementation of the voting app.  It tests for the presence of 'learn react', which is irrelevant to the chapter's task.
+- The chapter requires creating a React app with state management to handle votes for different programming languages.  This code doesn't do that.
+- Create a new file (e.g., `App.js`) and implement the voting app logic as described in the chapter instructions.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day4/daily_challenge/voting/src/Choice.js
+suggestions for improvement:
+- The provided code is a functional component (`Choice`) that renders a single voting option.  It's missing the main App component that would hold the state and integrate multiple Choice components.
+- The `onVote` prop is not defined within this component; it's expected to be passed from a parent component (App.js).
+- Consider using better semantic HTML elements. For example, instead of using `<h3>` for the vote count and language name, you might consider using `<p>` or other more descriptive elements.
+Correctness: 80%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day4/daily_challenge/voting/src/index.css
+suggestions for improvement:
+- The provided code is just CSS styling for a body and code elements. It does not implement any React code or functionality related to the voting app described in the chapter content.  It needs to be replaced with React code that uses state to manage votes and JSX to render the UI.
+- Add React components to handle the voting logic and UI rendering.  The components should manage the `languages` state array using `useState`.
+- Implement a function to handle the button clicks and update the vote count in the state using `setLanguages`.  Ensure that the UI updates correctly to reflect the changes in state.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day4/daily_challenge/voting/src/index.js
+suggestions for improvement:
+- This code only provides the basic React setup.  It's missing the crucial `App.js` component where the voting app logic should reside. The instructions explicitly state to implement the voting app within `App.js`.
+- Add the `App.js` file with the React state, component rendering, and vote incrementing functionality as described in the instructions. This file is essential to solve the problem.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day4/daily_challenge/voting/src/reportWebVitals.js
+suggestions for improvement:
+- The provided code is a React performance monitoring utility using `web-vitals`. It's completely unrelated to the chapter content, which focuses on building a simple voting app using React state and JSX.
+- The code itself is well-structured and readable. The use of async/await would improve the readability.  The error handling could be improved, as it currently silently fails if `web-vitals` cannot be imported.
+- The performance is reasonable.  The use of promises ensures that the performance metrics are collected asynchronously without blocking the main thread.  However, more sophisticated techniques could be used if it becomes a bottleneck.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day4/daily_challenge/voting/src/setupTests.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
