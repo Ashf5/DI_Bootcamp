@@ -1,0 +1,39 @@
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day4/daily_challenge/emojis2/models/emojis.js
+suggestions for improvement:
+- The provided code only defines an array of emojis.  It lacks the Express server, the game logic (random emoji selection, option generation, score tracking, form handling, and POST request processing using the Fetch API), and the leaderboard functionality specified in the Chapter Content/Questions.
+- The emoji names should be consistent in casing (e.g., all lowercase or title case).
+- Add comments to explain the purpose of the emoji array.
+Correctness: 20%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day4/daily_challenge/emojis2/package.json
+suggestions for improvement:
+- This is a `package.json` file, not an implementation of the emoji guessing game.  The chapter requires building an Express.js API with a game.  This file only sets up the project dependencies.
+- Add server-side code (in `index.js`) to handle requests, generate random emojis, manage scores, and provide feedback as per the chapter's instructions.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day4/daily_challenge/emojis2/public/index.html
+suggestions for improvement:
+- The provided HTML file only sets up the basic structure for the game.  It lacks the crucial server-side Express.js component and the game logic (generating random emojis, handling user input, updating scores, etc.). The instructions specifically require using Express.js to build an API.
+- The `main.js` file (not provided) is where the game logic would reside.  Without this file, it's impossible to assess the correctness of the game implementation.
+- Add a form to allow the user to input their guess. The current HTML doesn't contain a form element.
+- Add a way to display the score and provide feedback to the user (correct/incorrect).
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day4/daily_challenge/emojis2/public/main.js
+suggestions for improvement:
+- The code lacks server-side implementation.  The instructions require creating an Express API, but only client-side code interacting with a hypothetical API at `http://localhost:5000` is provided.
+- Error handling could be improved.  Currently, `console.log(err)` is used for all errors.  More informative error messages should be displayed to the user.
+- The leaderboard functionality is not fully implemented in the provided client-side code. It relies on the server providing the leaderboard data, which is missing.
+- Security:  The code sends the `correct` answer to the server in the POST request which is unnecessary and potentially vulnerable if not handled properly on the server side. Only the user's guess should be sent.
+- The `document.getElementsByTagName('form')[0]` is not the most robust way to select the form.  Give the form an ID and use `document.getElementById()` for better reliability.
+Correctness: 80%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week13/day4/daily_challenge/emojis2/server.js
+suggestions for improvement:
+- The POST request handling needs improvement.  It doesn't handle cases where the 'correct' property might be missing from the request body, leading to potential errors. Add input validation.
+- The leaderboard implementation is simplistic and doesn't handle ties or sorting effectively. A more robust solution might involve using a data structure better suited for sorting (e.g., an array of objects, each with a player name and score).
+- The client-side interaction (using the Fetch API) is not provided, which is a crucial part of the game. The instructions mention using Fetch, but the code lacks this implementation.  This should be included for a complete solution.
+- The use of a global variable `tries` is not ideal for handling multiple concurrent players. A better approach would involve storing the attempts per player (e.g., using session IDs or cookies).
+- Add error handling for the case where the `emojis` array is empty or contains invalid data.
+Correctness: 80%
+-----

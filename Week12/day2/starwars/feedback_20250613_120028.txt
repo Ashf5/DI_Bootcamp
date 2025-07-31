@@ -1,0 +1,25 @@
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week12/day2/starwars/index.html
+suggestions for improvement:
+- Add error handling for cases where the API returns a non-200 status code, providing more specific error messages to the user.
+- Improve styling for better visual appeal and accessibility.  The current CSS is not provided, so this is a general recommendation.
+- Consider adding input validation if you plan to expand functionality beyond a simple random character selection.
+- The code lacks comments explaining the purpose of different functions and sections. Adding comments would significantly improve readability.
+Correctness: 85%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week12/day2/starwars/main.js
+suggestions for improvement:
+- Improve error handling to provide more specific error messages to the user, instead of a generic 'Oh No! That person isnt available' message.  Consider displaying the specific error received from the API.
+- Add input validation to ensure the random number generated is within the valid range of the API.  While unlikely to fail, it's good practice.
+- The `loading()` function could be improved by adding a class to the `iElement` that allows for easier styling and removal. This would improve the separation of concerns and styling.
+- Consider adding more robust error handling for network issues or API unavailability.  A simple timeout might be helpful.
+Correctness: 95%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week12/day2/starwars/styles.css
+suggestions for improvement:
+- The provided CSS does not implement the Star Wars web app functionality described in the chapter content. It only styles a webpage with a background image and some basic styling for divs and buttons.  There is no JavaScript code to fetch data from the SWAPI, display it, handle loading states, or manage errors.
+- Add JavaScript functionality to fetch data from `https://www.swapi.tech/`, handle loading and error states, and display the requested character information (name, height, gender, birth year, and homeworld).
+- Implement the use of async/await and the Fetch API as specified in the chapter content.
+- Use a loading animation (as described, ideally using Font Awesome).
+- Display error messages as specified.
+Correctness: 0%
+-----

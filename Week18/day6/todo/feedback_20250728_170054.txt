@@ -1,0 +1,103 @@
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day6/todo/package.json
+suggestions for improvement:
+- This is a `package.json` file, not a React/Redux application.  It only defines dependencies and scripts needed for a React project, but it doesn't contain any code to actually implement a todo list.
+- The chapter instructions require building a React/Redux todo list application. This file only sets up the environment for building such an application.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day6/todo/public/index.html
+suggestions for improvement:
+- This HTML file is a basic React app template.  It doesn't contain any Redux or React code to implement the todo list.  The instructions require creating Redux actions, reducers, and React components to manage and display a todo list.
+- Add Redux and React code to create the todo list functionality as described in the chapter instructions.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day6/todo/public/manifest.json
+suggestions for improvement:
+- The provided code is a `manifest.json` file for a React application. It describes the application's metadata, icons, and display settings.  It does not contain any React or Redux code, nor does it implement a todo list.
+- To address the chapter content, you need to provide React and Redux code that creates a todo list application with functionality for adding, completing, and removing todos.  This would include actions, reducers, and components interacting with a Redux store.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day6/todo/src/App.css
+suggestions for improvement:
+- This CSS code does not implement a todo list application using React and Redux as instructed. It's a basic CSS styling for a React app, but lacks any Redux or Todo list functionality.
+- The chapter explicitly requires creating a Redux store, defining actions and reducers, building React components for adding, toggling, and removing todos, and connecting those components to the Redux store.  None of this is present in the provided code.
+- Add React and Redux code to create a functional todo list application.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day6/todo/src/App.js
+suggestions for improvement:
+- The provided code only defines a React App component that renders `TodoForm` and `TodoList` components.  It doesn't implement the Redux store, actions, reducers, or the connection between React components and the Redux store as explicitly required in the chapter content.
+- Implement Redux store using `createStore`. Define actions (add, toggle, remove) and reducers to handle these actions and update the todo list state.
+- Use `connect` from `react-redux` to connect `TodoForm` and `TodoList` to the Redux store.  `mapStateToProps` and `mapDispatchToProps` are needed to pass the relevant state and dispatch functions as props.
+- The `TodoForm` and `TodoList` components are missing and need to be implemented to handle user interaction and display the todo list.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day6/todo/src/App.test.js
+suggestions for improvement:
+- The provided code is a simple React test using `@testing-library/react`. It doesn't implement any Redux functionality or a todo list application as specified in the chapter content.
+- The test checks for the presence of text 'learn react', which is not relevant to the todo list application.
+- The code needs to be completely rewritten to fulfill the requirements of creating a todo list application using React and Redux.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day6/todo/src/TodoForm.js
+suggestions for improvement:
+- The code only implements the 'Add Todo' functionality.  It's missing components for toggling completion status and removing todos, as specified in the instructions.
+- Error handling is missing.  What happens if the user submits an empty todo item? Consider adding validation.
+- Use a controlled component instead of a ref. This improves readability and maintainability.
+- The styling is minimal.  Adding CSS would improve the user experience.
+Correctness: 80%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day6/todo/src/TodoList.js
+suggestions for improvement:
+- The code is missing the functionality to add new todos.  The chapter explicitly states to create components for adding new todos.
+- Error handling (e.g., handling an empty `todos` array) should be added for robustness.
+- Consider using a more descriptive key than `todo` in the todo object (e.g., `text` or `description`).
+- Add a unique identifier to each todo item during creation for reliable tracking of the todos.
+Correctness: 80%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day6/todo/src/index.css
+suggestions for improvement:
+- This code is only CSS styling. It does not implement a React-Redux todo list application as instructed.
+- The chapter content explicitly requires creating a todo list application using React and Redux.  This CSS does not meet that requirement.
+- Implement the Redux store, actions, reducers, and React components as outlined in the instructions to fulfill the exercise.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day6/todo/src/index.js
+suggestions for improvement:
+- The provided code only sets up the React application with Redux integration.  It's missing the core components (actions, reducers, and React components for the todo list itself) required to fulfill the exercise instructions.  The `store` from `./redux/store` is undefined in this snippet and needs to be implemented.
+- Add the actual todo list functionality: actions, reducers, and components for adding, toggling, and removing todos are missing. 
+- Implement the Redux store (`./redux/store`) with the initial state, reducers and actions as described in the chapter content. The current implementation only shows the boilerplate for integrating Redux.
+Correctness: 20%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day6/todo/src/redux/actions.js
+suggestions for improvement:
+- The code only provides actions and action creators.  It's missing the reducer, the React components, and the connection to the Redux store using `connect`.  The chapter explicitly requires all these parts. 
+- Add error handling for unexpected action types in the reducer (although not explicitly asked for, this is a best practice).
+- Consider using a more descriptive naming convention for action types (e.g., `ADD_TODO_ITEM` instead of `ADD_TODO`).
+- The `payload` in `removeTodo` and `toggleTodo` should be an object with an `id` property for better clarity and maintainability.  For example, `removeTodo: (todo) => ({ type: REMOVE_TODO, payload: { id: todo.id }})`.
+Correctness: 80%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day6/todo/src/redux/reducer.js
+suggestions for improvement:
+- Use a more robust unique ID generation method instead of `Date.now()` to avoid potential collisions, especially in concurrent environments. Consider using a library like `uuid`.
+- Add error handling or logging for unexpected action types to enhance robustness.
+- Improve readability by breaking down the reducer into smaller, more focused functions for each action type.  This enhances maintainability.
+- The `TOGGLE_TODO` reducer could be made slightly more efficient by using `findIndex` instead of `map` to avoid iterating through the entire array unnecessarily if the todo is not found.
+Correctness: 95%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day6/todo/src/redux/store.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day6/todo/src/reportWebVitals.js
+suggestions for improvement:
+- This code is entirely unrelated to the chapter content. It's a React performance reporting function using web-vitals, not a Redux todo list application.
+- The code itself is well-structured and readable, with clear variable names and conditional logic.
+- The asynchronous nature of importing 'web-vitals' is handled correctly, preventing potential race conditions.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day6/todo/src/setupTests.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
