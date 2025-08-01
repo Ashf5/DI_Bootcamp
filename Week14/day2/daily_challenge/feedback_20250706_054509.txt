@@ -1,0 +1,35 @@
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week14/day2/daily_challenge/app.js
+suggestions for improvement:
+- The code is missing the crucial implementation details for user registration, login, and data manipulation as described in the chapter content.  There's no database interaction, password hashing, or route handling for the specified endpoints.
+- The `userRoutes.js` file is missing, which contains the core logic for the API.  Without this file, the code is incomplete.
+- The code does not address the requirement of using transactions to add a user.
+- There is no error handling which is critical for a production-ready API.
+- The code lacks security measures such as input validation and protection against SQL injection.
+- The project structure is not properly set up according to the requirements (server/config/controllers/models/routes).
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week14/day2/daily_challenge/config/db.js
+suggestions for improvement:
+- Checker failed to provide a response.
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week14/day2/daily_challenge/controllers/userController.js
+suggestions for improvement:
+- Checker failed to provide a response.
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week14/day2/daily_challenge/models/registration.js
+suggestions for improvement:
+- Checker failed to provide a response.
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week14/day2/daily_challenge/package.json
+suggestions for improvement:
+- Checker failed to provide a response.
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week14/day2/daily_challenge/routes/userRoutes.js
+suggestions for improvement:
+- Checker failed to provide a response.
+Correctness: N/A%
+-----
