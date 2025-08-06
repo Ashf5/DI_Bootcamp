@@ -1,0 +1,111 @@
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week19/day2/planner/package.json
+suggestions for improvement:
+- This is a `package.json` file, not the React-Redux code for the daily planner application.  The instructions asked for the React-Redux code itself, including actions, reducers, and components.
+- The `package.json` correctly lists necessary dependencies for a React-Redux application (react-redux, @reduxjs/toolkit, react-calendar), indicating understanding of the technology stack.  However, it provides no implementation details.
+- Provide the actual React components (TaskList, AddTask, EditTask, DeleteTask), reducers, and actions to assess correctness related to task management within the Redux store.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week19/day2/planner/public/index.html
+suggestions for improvement:
+- This HTML file is just a basic React app template.  It doesn't contain any of the Redux store setup, actions, reducers, components (Calendar, TaskList, AddTask, EditTask, DeleteTask), or the logic required to fulfill the daily planner application requirements.  The instructions require a React-Redux application, and this is only a barebones HTML structure.
+- Implement the Redux store using Redux Toolkit's `configureStore`.
+- Create actions (`addTask`, `editTask`, `deleteTask`) and reducers to manage tasks in the store.
+- Build React components for the calendar/date picker, task display, task addition, task editing, and task deletion.
+- Connect these components to the Redux store using `useSelector` and `useDispatch`.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week19/day2/planner/public/manifest.json
+suggestions for improvement:
+- The provided code is a `package.json` manifest file for a React application. It does not contain any React, Redux, or daily planner code.  It defines metadata for the application, such as icons and theme colors, but is entirely unrelated to the task of building a daily planner.
+- The chapter requires the implementation of Redux store, reducers, actions, components for calendar, task display, adding, editing and deleting tasks. None of this functionality is present in the given code.
+- To achieve a non-zero correctness score, provide the React, Redux, and daily planner application code.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week19/day2/planner/src/App.css
+suggestions for improvement:
+- The provided code is only CSS styling for a React application.  It does not implement any of the functionality described in the Chapter Content/Questions, which requires a Redux store, actions, reducers, and React components for a daily planner.
+- The code needs to be replaced with a complete React-Redux application that fulfills the requirements outlined in the Chapter Content/Questions. This includes a date picker, task list, add task, edit task, and delete task functionality.
+- Implement the Redux store using configureStore from Redux Toolkit.
+- Create actions (addTask, editTask, deleteTask) and reducers to manage tasks for each day.
+- Build React components for displaying the calendar, task list, and handling task management.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week19/day2/planner/src/App.js
+suggestions for improvement:
+- The provided code only renders two components, `TaskForm` and `TaskList`, without any Redux integration or date picker functionality.  It doesn't implement any of the actions (addTask, editTask, deleteTask) or reducers required by the chapter content.
+- The `TaskForm` and `TaskList` components are not defined in this code snippet.  Their implementation is crucial for achieving the chapter's goals.
+- There's no Redux store setup using `configureStore` as instructed.
+- No calendar or date picker component is present for day selection.
+- The code lacks `useSelector` and `useDispatch` hooks for interacting with the Redux store.
+Correctness: 20%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week19/day2/planner/src/App.test.js
+suggestions for improvement:
+- The provided code is a simple React test using Jest and Testing Library. It doesn't implement any of the functionality described in the Chapter Content/Questions, which focuses on building a daily planner application with Redux.
+- The code needs to be replaced with a React-Redux application that includes components for a calendar, task list, adding, editing, and deleting tasks.  It should utilize Redux actions and reducers to manage the application state.
+- The test itself is fine for what it tests, but it is completely irrelevant to the task.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week19/day2/planner/src/TaskForm.js
+suggestions for improvement:
+- The code only implements the 'addTask' functionality.  It's missing components and actions for editing and deleting tasks (Step 2, Step 4, Step 5).
+- The `TaskForm` component handles both date selection and task input.  Separating these into distinct components (Calendar Component and AddTask Component) would improve organization and reusability (Step 3, Step 4).
+- Error handling is missing.  What happens if the user doesn't enter a task?  Adding input validation would improve user experience.
+- The TaskList component to display tasks is missing (Step 4).
+- The code doesn't demonstrate using `useSelector` to access tasks from the Redux store (Step 5).
+- The `date` state is reset to the current day every time the component renders.  Persisting selected date across renders will improve the experience.
+Correctness: 70%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week19/day2/planner/src/TaskList.js
+suggestions for improvement:
+- The `editTodo` action needs to handle the case where the input field is empty or contains only whitespace.  Currently, it will still update the task, potentially leaving it blank.
+- Add input validation to prevent XSS vulnerabilities. Sanitize user inputs before dispatching the `editTodo` action.
+- Implement an 'Add Task' component as specified in the instructions.  Currently, only display and edit/delete functionality is present.
+- Error handling should be added.  What happens if a task ID is not found when deleting or editing?
+- Consider using a more robust date/time library for better date handling and formatting.  Currently it relies on ISO string comparisons.
+Correctness: 85%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week19/day2/planner/src/features/planner/PlannerSlice.js
+suggestions for improvement:
+- The initial state should include a structure to manage tasks for different days, not just a single array.  The current design makes it difficult to retrieve tasks for a specific day.
+- The `addTodo`, `deleteTodo`, and `editTodo` reducers should handle tasks grouped by date. Currently they operate on a single task list, ignoring the specified date.
+- Add error handling.  While unlikely, consider edge cases like missing `date` or `task` properties in action payloads.
+- Consider adding a unique ID generation strategy that's less prone to collisions than `Date.now()` (e.g., using a UUID library).
+- The application lacks a calendar/date picker component and UI elements for interacting with tasks (add, edit, delete).
+Correctness: 70%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week19/day2/planner/src/index.css
+suggestions for improvement:
+- The provided code is only CSS styling for a React application. It does not implement any of the functionality described in the Chapter Content/Questions, such as Redux store setup, actions, reducers, components for task management, or interaction with a calendar/date picker.
+- The code should be replaced with a complete React-Redux application that fulfills the requirements outlined in the chapter.
+- Add components for calendar/date picker, task list, adding, editing and deleting tasks.  These components should interact with Redux store.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week19/day2/planner/src/index.js
+suggestions for improvement:
+- The provided code only sets up the React application with Redux integration.  It does not implement any of the functionality described in the chapter content (actions, reducers, components for calendar, task display, adding/editing/deleting tasks).
+- The chapter requires the implementation of several React components and Redux actions/reducers to manage tasks, including a calendar component, task list component, add task component, edit task component, and delete task component.
+- Add the missing components and Redux logic to fulfil the requirements described in the Chapter Content/Questions.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week19/day2/planner/src/reportWebVitals.js
+suggestions for improvement:
+- The provided code is a React performance measurement utility using web-vitals. It has absolutely nothing to do with the daily planner application using React-Redux described in the chapter content.
+- The code itself is well-structured and readable.  The use of async/await or Promises is appropriate for handling the import of 'web-vitals'.
+- There's no relevant security concern in this small snippet.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week19/day2/planner/src/setupTests.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week19/day2/planner/src/store.js
+suggestions for improvement:
+- The provided code only sets up the Redux store.  It's missing crucial components like the `PlannerSlice` (presumably containing reducers and actions for task management), the React components for the UI (calendar, task list, add/edit/delete forms), and the connection between the components and the Redux store using `useSelector` and `useDispatch`.
+- The `plannerReducer` is not defined; therefore the store is incomplete.
+- Add missing actions (addTask, editTask, deleteTask) and reducers within the `PlannerSlice` to handle task management.
+- Implement React components to interact with the Redux store and render the UI elements (calendar, task list, add/edit/delete forms).
+- Use `useSelector` and `useDispatch` hooks to connect the React components with the Redux store.
+Correctness: 20%
+-----
