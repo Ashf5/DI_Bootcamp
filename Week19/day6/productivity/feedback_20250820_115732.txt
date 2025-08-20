@@ -1,0 +1,200 @@
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week19/day6/productivity/package.json
+suggestions for improvement:
+- The provided code is a `package.json` file, which defines project metadata and dependencies. To fulfill the requirements, the actual JavaScript/TypeScript code for the Redux store, reducers, actions, selectors, and React components needs to be implemented.
+- Implement the Redux store, task and category reducers, and their initial states as specified in requirement 1.
+- Write action creators and reducers for adding, editing, deleting tasks/categories, and updating task progress, addressing requirement 2.
+- Create memoized selectors using `reselect`'s `createSelector` (e.g., `selectTasksByCategory`, `selectCompletedTasks`, `selectCategoryById`) as per requirement 3.
+- Develop `TaskList` and `CategorySelector` React components, utilizing `useSelector` to connect to the Redux store and display data, as described in requirement 4.
+- Add UI elements and implement logic for task editing and completion, ensuring `useCallback` is used for efficiency as stated in requirement 5.
+- Directly incorporate code patterns and techniques for Redux performance optimizations and enhancements, beyond just using Redux Toolkit (e.g., proper memoization, avoiding unnecessary re-renders), as indicated in the 'What you will learn' section.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week19/day6/productivity/public/index.html
+suggestions for improvement:
+- The provided code is an `index.html` file, which is a standard boilerplate for a React application. It does not contain any JavaScript, Redux setup, React components, actions, reducers, or selectors as required by the instructions.
+- Implement the Redux store with `createStore` or `configureStore`, defining initial states for tasks and categories.
+- Create Redux action creators (e.g., `addTask`, `editTask`, `deleteTask`, `addCategory`, etc.) and corresponding reducer logic to handle state updates immutably.
+- Utilize `reselect`'s `createSelector` to define memoized selectors such as `selectTasksByCategory`, `selectCompletedTasks`, and `selectCategoryById` to optimize state access.
+- Develop the `TaskList` and `CategorySelector` functional components using React and Redux hooks (`useSelector`, `useDispatch`).
+- Implement UI elements for task editing and completion, ensuring `useCallback` is used for event handlers passed down to child components to prevent unnecessary re-renders and enhance performance.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week19/day6/productivity/public/manifest.json
+suggestions for improvement:
+- **Provide the correct code:** The current submission is a `manifest.json` file, which is not the code required to solve the productivity tracker problem. Please submit the actual JavaScript/TypeScript code that implements the Redux store, actions, reducers, selectors, and React components as specified in the instructions.
+- **Implement Redux Setup:** The solution needs to include a Redux store setup with initial states for tasks and categories, as described in instruction point 1.
+- **Implement Actions and Reducers:** Define and implement all specified actions (add, edit, delete tasks; add, edit, delete categories; update task progress) and their corresponding reducer logic (instruction point 2).
+- **Create Redux Selectors:** Use `reselect`'s `createSelector` to build the `selectTasksByCategory`, `selectCompletedTasks`, and `selectCategoryById` selectors (instruction point 3).
+- **Build Functional Components:** Develop the `TaskList` and `CategorySelector` React components, utilizing `useSelector` to connect to the Redux store (instruction point 4).
+- **Utilize `useCallback`:** Ensure `useCallback` is used for handling task editing and completion callbacks to prevent unnecessary re-renders, as specified in instruction point 5.
+- **Implement UI Elements:** The solution should include basic UI elements for task editing and marking tasks as completed (instruction point 5).
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week19/day6/productivity/public/robots.txt
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week19/day6/productivity/src/App.css
+suggestions for improvement:
+- The provided code is entirely CSS and does not address any of the Redux, React, or JavaScript implementation requirements outlined in the chapter content.
+- To fulfill the requirements, you need to provide JavaScript/React code that includes:
+- - Redux store setup (using `configureStore` or `createStore`).
+- - Reducers for managing tasks and categories, including initial states.
+- - Action creators and types for adding, editing, deleting tasks and categories, and updating task progress.
+- - Selectors built with `reselect`'s `createSelector` (e.g., `selectTasksByCategory`, `selectCompletedTasks`, `selectCategoryById`).
+- - Functional React components (`TaskList`, `CategorySelector`) that use `useSelector` to interact with the Redux store.
+- - Implementation of `useCallback` for efficient handling of task editing and completion within the components.
+- - UI elements (e.g., input fields, buttons, checkboxes) for editing tasks and marking them as completed.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week19/day6/productivity/src/App.js
+suggestions for improvement:
+- The provided `App.js` file is a minimal root component and does not contain any of the core Redux setup (store, reducers, initial state) as required by point 1.
+- It does not implement any Redux actions or reducers (point 2). These would typically reside in separate files and be connected to the store.
+- There's no usage of `createSelector` for performance optimization, nor any of the specific selectors (`selectTasksByCategory`, `selectCompletedTasks`, `selectCategoryById`) within this file (point 3).
+- While it imports `TaskList`, the `App.js` itself does not demonstrate the use of `useSelector` within `TaskList` for category-based filtering, nor does it include a `CategorySelector` component (point 4). It imports `TaskForm` instead, which is not explicitly mentioned as a required component, while `CategorySelector` is.
+- The `App.js` file does not utilize `useCallback` for task editing or completion, nor does it implement any UI elements for these functionalities directly (point 5). These concerns are delegated to child components, which are not provided for review.
+- To address the Redux requirements, you would need to set up a Redux store using `configureStore` (from `@reduxjs/toolkit`) and wrap your `App` component with a `Provider` from `react-redux`.
+- Ensure `TaskList` and `TaskForm` (or `CategorySelector`) correctly implement the Redux integration using `useSelector` and `useDispatch`, and `useCallback` for optimizing callbacks.
+Correctness: 5%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week19/day6/productivity/src/App.test.js
+suggestions for improvement:
+- The provided code is a basic React test file and does not implement any of the requested features for the productivity tracker application (Redux setup, actions, reducers, selectors, functional components, task editing/completion).
+- Implement Redux store configuration, including combining reducers for tasks and categories.
+- Define initial state structures for tasks (e.g., ID, description, category ID, completed status) and categories (e.g., ID, name).
+- Create Redux actions and corresponding reducers for adding, editing, and deleting tasks, as well as adding, editing, and deleting categories. Also, implement an action/reducer for updating task progress/completion.
+- Utilize `reselect` (or `createSelector` from `@reduxjs/toolkit/reselect`) to create memoized selectors: `selectTasksByCategory`, `selectCompletedTasks`, and `selectCategoryById`.
+- Build the `TaskList` functional component to display tasks, using `useSelector` to retrieve tasks based on a selected category. It should also interact with Redux actions for task updates.
+- Build the `CategorySelector` functional component to display and allow selection of categories, fetching them via `useSelector`.
+- Within `TaskList` or a child component, implement UI elements for task editing and marking tasks as completed. Ensure that handler functions for these actions are memoized using `useCallback` for performance optimization, as specified in the chapter content.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week19/day6/productivity/src/CategoryForm.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week19/day6/productivity/src/TaskForm.js
+suggestions for improvement:
+- The code implements a `TaskForm` component, but the instructions explicitly request a `TaskList` and `CategorySelector` component. Please create these specific components.
+- Utilize `createSelector` from `reselect` for selecting data from the Redux store (e.g., `categories`). This is a key requirement for Redux performance optimization mentioned in the chapter content and instructions (point 3). Currently, `useSelector(state => state.categories)` can cause unnecessary re-renders if other parts of the state change.
+- Apply `useCallback` to memoize the `handleChange` function and the `onClick` handler for the submit button. This aligns with the instruction to use `useCallback` for efficiency (point 5), even though this component is for adding tasks, not editing/completing them.
+- The component only handles task *addition*. Extend the functionality to include task editing and completion with UI elements as specified in the instructions (point 5).
+- Ensure all specified actions (add, edit, delete tasks; add, edit, delete categories; update task progress) and their corresponding reducers are fully implemented in the Redux setup (point 2).
+- For form inputs, it's generally better practice to manage the input's state using `useState` (e.g., `const [taskTitle, setTaskTitle] = useState('')`) and pass an `onChange` handler to the input, rather than relying on `e.target.form.task.value` in the submit handler. This makes the input a controlled component.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week19/day6/productivity/src/TaskList.js
+suggestions for improvement:
+- Implement `useCallback` for all event handlers that dispatch Redux actions (e.g., `onClick` handlers in `TaskCard` and `CategoryList`) as explicitly required by the instructions for efficiency.
+- Create and utilize the `selectCompletedTasks` selector using `createSelector` to compute the count of completed tasks. This selector is a direct requirement and was not found or used in the provided code.
+- Create and utilize the `selectCategoryById` selector using `createSelector` to return category details based on ID. This selector is a direct requirement and was not found or used in the provided code.
+- Implement the functionality (actions, reducers, and UI elements) for adding new tasks, editing existing tasks, editing categories, and deleting categories, as these were explicitly listed requirements for actions and UI.
+- Replace the `prompt()` dialog in `CategoryList` with a proper UI input element for adding new categories, providing a better user experience and separating concerns.
+- Refactor `TaskCard` to destructure the `task` prop directly (e.g., `function TaskCard({ task })`) for cleaner prop access.
+Correctness: 40%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week19/day6/productivity/src/features/categories/categorySelectors.js
+suggestions for improvement:
+- **Complete Missing Requirements:** The provided code only implements one of the three required selectors and none of the other significant Redux setup (store, reducers, initial states), actions/reducers, functional components, or task editing/completion logic. These foundational and core requirements must be implemented to fulfill the task.
+- **Implement `selectTasksByCategory`:** Create a memoized selector using `createSelector` that filters tasks based on a given category ID. This will require defining a `tasks` slice in your Redux state.
+- **Implement `selectCompletedTasks`:** Create a memoized selector using `createSelector` to compute and return the total count of completed tasks from your `tasks` state.
+- **Improve Dynamic Selector Pattern for Performance:** The current pattern `export const selectCategoryById = (catId)=> createSelector(...)` creates a *new memoized selector instance* every time `selectCategoryById(someId)` is called. While functional, this can lead to performance inefficiencies if the returned selector isn't itself memoized by the consumer (e.g., using `useMemo` in a React component), or if the same selector is repeatedly created. A more idiomatic and generally performant pattern for dynamic selectors is to pass the dynamic argument directly to a single memoized selector instance. For example:
+    ```javascript
+    import { createSelector } from "@reduxjs/toolkit";
+
+    const selectCategories = (state) => state.categories;
+    // Input selector to get the category ID from the arguments passed to the main selector
+    const selectCatId = (state, catId) => catId; 
+
+    export const selectCategoryById = createSelector(
+        [selectCategories, selectCatId],
+        (categories, catId) => categories.find(cat => cat.id === catId)
+    );
+    // Usage in a component: const category = useSelector(state => selectCategoryById(state, someId));
+    ```
+    This ensures that `selectCategoryById` itself is a single memoized function, and its computation only re-runs if `categories` or `catId` changes.
+- **Implement Redux Setup:** Define and set up the Redux store using `configureStore` from `@reduxjs/toolkit`, including initial states for `tasks` and `categories` and combining appropriate reducers.
+- **Implement Actions and Reducers:** Create action creators and corresponding reducers for `tasks` and `categories` to handle operations like adding, editing, deleting tasks, adding/editing/deleting categories, and updating task progress.
+- **Implement Functional Components:** Build the `TaskList` and `CategorySelector` React components, utilizing `useSelector` to connect to the Redux store and display relevant data based on the defined selectors.
+- **Integrate `useCallback` for Efficiency:** Use `useCallback` within your React components (e.g., `TaskList`) to memoize event handlers for task editing and completion, preventing unnecessary re-renders of child components when functions are passed down as props.
+Correctness: 10%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week19/day6/productivity/src/features/categories/categorySlice.js
+suggestions for improvement:
+- Implement the Redux store for tasks, including initial state, and actions (add, edit, delete tasks) and a reducer to handle them, as explicitly required by points 1 and 2.
+- Create the specified selectors (`selectTasksByCategory`, `selectCompletedTasks`, `selectCategoryById`) using `createSelector` from 'reselect', addressing point 3 and demonstrating Redux performance optimizations.
+- Build the `TaskList` and `CategorySelector` functional components, utilizing `useSelector` as required by point 4.
+- Implement the UI elements for task editing and completion, ensuring `useCallback` is used for efficiency as specified in point 5.
+- Improve the ID generation logic in `addCategory` to be more robust. Instead of `state[state.length -1].id + 1`, consider finding the maximum existing ID or using a universally unique identifier (UUID) library to prevent potential issues if the state is empty or items are deleted.
+- Integrate this `categorySlice` with a `taskSlice` (once created) into a central Redux store using `configureStore`.
+Correctness: 30%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week19/day6/productivity/src/features/tasks/taskSelectors.js
+suggestions for improvement:
+- Refactor `selectTasksByCategoryId` to use `createSelector` as explicitly required by the instructions. This is crucial for Redux performance optimizations as highlighted in the chapter.
+- Correct the logic in `selectTasksByCategoryId` to filter tasks by `categoryId` instead of `task.id`.
+- Rename `selectNotCompletedTasks` to `selectCompletedTasks` to match the requirement.
+- Modify `selectCompletedTasks` to return the *count* of completed tasks, not an array of tasks. Use `.length` after filtering.
+- Correct the filtering logic within `selectNotCompletedTasks` (or `selectCompletedTasks`) from `tasks.filter(tasks.completed === false)` to `tasks.filter(task => task.completed === false)`.
+- Implement the `selectCategoryById` selector, utilizing `createSelector`.
+- Remove the commented-out code block for `selectTasksByCategoryId` to improve code clarity, or explain its purpose if it represents an abandoned alternative approach.
+Correctness: 15%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week19/day6/productivity/src/features/tasks/taskSlice.js
+suggestions for improvement:
+- Implement a separate Redux slice for 'categories' to manage category state, including actions for adding, editing, and deleting categories, as explicitly required by the 'Redux Setup' and 'Actions and Reducers' sections.
+- Create a dedicated selectors file (e.g., `src/selectors.js`) and implement memoized selectors using `createSelector` for `selectTasksByCategory`, `selectCompletedTasks`, and `selectCategoryById` as detailed in the 'Selectors Creation' requirement. This is crucial for addressing 'Redux Performance Optimizations'.
+- This code snippet only covers the Redux slice. The next steps would be to build the functional components (`TaskList` and `CategorySelector`) and utilize `useSelector` and `useCallback` within them as outlined in requirements 4 and 5.
+- Ensure consistent naming conventions. While `toggleTask` works, `toggleTaskCompletion` might be more descriptive to indicate that only the `completed` status is being toggled.
+Correctness: 30%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week19/day6/productivity/src/index.css
+suggestions for improvement:
+- The provided code is a CSS snippet and does not address any of the requirements outlined in the 'Chapter Content/Questions' regarding Redux setup, actions, reducers, selectors, or React components. The solution needs to be implemented in JavaScript/TypeScript for a Redux application.
+- Implement the Redux store setup with `configureStore` from `@reduxjs/toolkit`.
+- Define initial states for tasks and categories within their respective reducers.
+- Create action types and action creators for all specified operations: adding, editing, deleting tasks, adding, editing, deleting categories, and updating task progress.
+- Develop reducers that handle these actions and immutably update the Redux state for tasks and categories.
+- Utilize `reselect`'s `createSelector` to build the required memoized selectors: `selectTasksByCategory`, `selectCompletedTasks`, and `selectCategoryById`.
+- Build the `TaskList` functional component, using `useSelector` to retrieve tasks and dispatch actions for editing/completion.
+- Implement the `CategorySelector` functional component, using `useSelector` to fetch categories and `useDispatch` to handle category selection.
+- Apply `useCallback` to memoize callback functions (e.g., for task editing and completion handlers) within the React components to prevent unnecessary re-renders.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week19/day6/productivity/src/index.js
+suggestions for improvement:
+- Implement the Redux store definition, including root reducer, task, and category reducers with their initial states in a separate file (e.g., `store.js` or `redux/store.js`).
+- Define and implement all required Redux actions (add, edit, delete tasks, add, edit, delete categories, update task progress).
+- Create and implement the specified selectors (`selectTasksByCategory`, `selectCompletedTasks`, `selectCategoryById`) using `reselect`'s `createSelector` to ensure memoization and performance.
+- Develop the `TaskList` functional component to display tasks, using `useSelector` to retrieve tasks based on the selected category.
+- Develop the `CategorySelector` functional component to fetch and display categories, allowing users to select a category.
+- Implement UI elements for task editing and marking tasks as completed. Ensure `useCallback` is used for event handlers related to these actions to optimize performance and prevent unnecessary re-renders.
+- The current code is just the entry point; the actual implementation of the productivity tracker's logic is missing.
+Correctness: 5%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week19/day6/productivity/src/reportWebVitals.js
+suggestions for improvement:
+- The provided code `reportWebVitals` does not address any of the requirements for building a Redux productivity tracker (Redux setup, actions, reducers, selectors, functional components, task editing, completion). The core task is to implement a Redux application, but the code is only for general web performance monitoring.
+- To meet the requirements, you need to implement the Redux store, define initial states for tasks and categories, create action types and action creators for task/category management, and write reducers to handle state updates.
+- Implement the specified Redux selectors (`selectTasksByCategory`, `selectCompletedTasks`, `selectCategoryById`) using `reselect`'s `createSelector` for memoization.
+- Develop the `TaskList` and `CategorySelector` React components, ensuring they utilize `useSelector` to retrieve data from the Redux store.
+- Integrate `useCallback` within your React components to memoize event handlers (e.g., for task editing and completion) to prevent unnecessary re-renders, aligning with the 'Redux Performance Optimizations' theme mentioned in the learning objectives.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week19/day6/productivity/src/setupTests.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week19/day6/productivity/src/store.js
+suggestions for improvement:
+- Complete the Redux setup by ensuring initial states for tasks and categories are defined within their respective slice files (`categorySlice.js`, `taskSlice.js`).
+- Implement all required actions (add, edit, delete tasks/categories, update task progress) and their corresponding reducer logic within `taskSlice.js` and `categorySlice.js` as per requirement 2.
+- Create and utilize the specified selectors (`selectTasksByCategory`, `selectCompletedTasks`, `selectCategoryById`) using `createSelector` to efficiently derive data from the Redux store (requirement 3).
+- Develop the `TaskList` and `CategorySelector` functional components, ensuring they properly interact with the Redux store using `useSelector` (requirement 4).
+- Implement task editing and completion functionalities within your components, using `useCallback` for event handlers to optimize performance (requirement 5).
+Correctness: 15%
+-----
