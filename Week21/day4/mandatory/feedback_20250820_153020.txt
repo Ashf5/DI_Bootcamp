@@ -1,0 +1,7 @@
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week21/day4/mandatory/exercise.ts
+suggestions for improvement:
+- In Exercise 4, adjust the static method names `Add` and `Subtract` to `add` and `subtract` respectively, to match the lowercase convention specified in the instructions (`add(a: number, b: number): number`).
+- In Exercise 5, modify the `PremiumUser` interface to make `membershipLevel` an optional property, as stated in the instructions. Change `membershipLevel: string;` to `membershipLevel?: string;`.
+- For Exercise 1, consider adding a subclass that extends `Employee` to explicitly demonstrate the access of the `protected department` property, as this would more fully illustrate the concept of `protected` access, which is accessible within the class and its subclasses.
+Correctness: 90%
+-----
