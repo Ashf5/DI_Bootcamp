@@ -1,0 +1,93 @@
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day6/xp/package.json
+suggestions for improvement:
+- The provided code is a `package.json` file, which is a project configuration file for Node.js and npm (or yarn). It does not contain any React code that addresses the exercises described in the chapter content.  To assess the exercises, you need to provide the actual React component code (App.js, ErrorBoundary.js, Child.js, etc.) that implements the functionalities for error boundaries, lifecycle methods, and event handlers.
+- Implement the `BuggyCounter`, `ErrorBoundary`, and `Child` components as class components, incorporating the specified lifecycle methods (componentDidCatch, shouldComponentUpdate, componentDidUpdate, componentWillUnmount, getSnapshotBeforeUpdate) and event handlers (onClick).
+- Ensure that the error boundary correctly catches and displays errors from `BuggyCounter` in the three simulation scenarios.
+- In Exercise 2, Part I, demonstrate the functionality of `shouldComponentUpdate` by preventing state updates when it returns `false`.
+- In Exercise 2, Part II and Part III, make use of `componentDidUpdate` and `getSnapshotBeforeUpdate` to display appropriate messages in the console or on the UI.
+- In Exercise 3, demonstrate the correct usage of `componentWillUnmount` in the `Child` component.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day6/xp/public/index.html
+suggestions for improvement:
+- The provided code is an HTML file, a basic template for a React application. It does not contain any JavaScript code to implement the exercises described in the chapter content.  The exercises require creating React components (`BuggyCounter`, `ErrorBoundary`), implementing lifecycle methods (`componentDidCatch`, `shouldComponentUpdate`, `componentDidUpdate`, `componentWillUnmount`, `getSnapshotBeforeUpdate`), and handling events (`onClick`).  The HTML file provides the basic structure but lacks the essential React components and logic to fulfill the exercise requirements.
+- You need to add React components and logic within the  `App.js` file and potentially other JavaScript files to implement the functionalities outlined in the exercises.  The provided HTML file is only the starting point of a React project, it's not a solution to the exercises.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day6/xp/public/manifest.json
+suggestions for improvement:
+- The provided code is a `package.json` file for a React app, not the React code itself.  It doesn't address any of the exercises (React lifecycle, error boundaries, event handlers).
+- To receive a proper evaluation, please provide the actual React component code (App.js, ErrorBoundary.js, etc.) that implements the exercises.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day6/xp/src/App.css
+suggestions for improvement:
+- The provided code is CSS for styling a React application. It does not implement any of the exercises described in the Chapter Content/Questions.  It needs to be replaced with JavaScript code that creates the necessary React components (BuggyCounter, ErrorBoundary, and the App component incorporating the simulations and lifecycle methods) as instructed in the exercises.
+- Add the necessary JavaScript code to create the React components and implement the exercises' logic.  This includes state management, event handling, error boundaries, and lifecycle methods (componentDidCatch, shouldComponentUpdate, componentDidUpdate, componentWillUnmount, getSnapshotBeforeUpdate).
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day6/xp/src/App.js
+suggestions for improvement:
+- The `App.js` file only renders the components; the core logic for `BuggyCounter` and `ErrorBoundary` is missing.  The provided `App.js` demonstrates the three simulations correctly, but without the actual implementation of `BuggyCounter` and `ErrorBoundary`, it's impossible to assess their correctness fully.
+- Add comments explaining the purpose of each section in `App.js` to improve readability.  For example, add comments to clarify the purpose of each simulation.
+- Consider using functional components with hooks instead of class components for `BuggyCounter` and `ErrorBoundary` where appropriate, to leverage cleaner syntax and potential performance benefits.
+Correctness: 95%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day6/xp/src/App.test.js
+suggestions for improvement:
+- The provided code is a simple Jest test for a React application. It doesn't address any of the exercises outlined in the chapter content.  It tests for the presence of text 'learn react', which is unrelated to error boundaries, lifecycle methods, or event handlers.
+- The chapter requires creating several React components (`BuggyCounter`, `ErrorBoundary`, and potentially a `Child` component), implementing lifecycle methods (`componentDidCatch`, `shouldComponentUpdate`, `componentDidUpdate`, `componentWillUnmount`, `getSnapshotBeforeUpdate`), and handling events (`onClick`).  None of this is present in the submitted code.
+- To receive a higher correctness score, the code needs to be rewritten to complete the exercises described in the chapter, specifically exercises 1, 2, and 3.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day6/xp/src/BuggyCounter.js
+suggestions for improvement:
+- The `BuggyCounter` component correctly implements the counter functionality and throws an error when the counter reaches 5, as specified in Exercise 1. However, it doesn't utilize a class component as instructed.  It should be refactored to use a class component to fully comply with the exercise requirements.
+- The `ErrorBoundary` component is missing entirely.  This is a crucial part of Exercise 1, and its absence significantly impacts the correctness score.
+- Exercise 2 is not addressed at all by the provided code.
+- Exercise 3 is also not addressed in the provided code.
+Correctness: 80%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day6/xp/src/Color.js
+suggestions for improvement:
+- Exercise 1 (Error Boundary) is missing.  The provided code focuses only on lifecycle methods and doesn't address error handling.
+- The code for Exercise 2 (Lifecycle) Part II and Part III could be improved by explicitly showing the logging in the UI, instead of only the console. This would make it easier to visually confirm the execution of `componentDidUpdate` and `getSnapshotBeforeUpdate`.
+- Add comments to explain the purpose of each method and state change within the `Color` component.  This would significantly improve readability.
+- In `shouldComponentUpdate()`, while returning `true` is functionally correct,  it would be more efficient to add a conditional check based on whether the props or state have actually changed before returning true to avoid unnecessary re-renders.
+Correctness: 95%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day6/xp/src/ErrorBoundary.js
+suggestions for improvement:
+- The `BuggyCounter` component and the simulations (Simulation 1, 2, and 3) are missing.  The provided code only includes the `ErrorBoundary` component, which is a crucial part but not the complete solution for Exercise 1.  Exercise 2 and 3 are also completely missing.
+- The `ErrorBoundary` component correctly implements `componentDidCatch`, but it could be improved by providing more user-friendly error messages instead of just showing the technical stack trace. Consider displaying a more general error message to the user and logging the detailed stack trace separately to the console.
+- Add clear comments to explain the purpose and functionality of each method within `ErrorBoundary` to enhance readability for maintainability.
+Correctness: 80%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day6/xp/src/index.css
+suggestions for improvement:
+- **Exercise 1:** The `ErrorBoundary` component's rendering of the error details could be improved for user experience.  Consider a more user-friendly error message instead of directly displaying the error stack trace.  Adding a button to refresh the page after an error would also enhance usability.
+- **Exercise 1:**  The instructions mention wrapping components with `ErrorBoundary`, but the provided code is missing. The assessment assumes the functionality is implemented correctly, but this requires verification with the actual code. 
+- **Exercise 2, Part I:** While setting `shouldComponentUpdate` to `true` and `false` demonstrates the functionality correctly, the exercise lacks a clear description of what to expect when the value changes. Adding more detailed instructions would improve clarity.
+- **Exercise 2, Part II & III:** The instructions for parts II and III are unclear and lack concrete examples. The expected output images are also not fully aligned with the instructions.  Add a specific description of what should be logged and displayed in the console and UI for these lifecycle methods.
+- **Exercise 3:** The instructions for this exercise are also unclear. It's not entirely explicit how the `Child` component should interact with the `App` component's state. Providing a more structured outline of how the components should relate would improve the clarity of this exercise.
+- **General:**  The exercises could benefit from more explicit examples and clear descriptions of the expected behavior.  Adding more precise instructions with illustrative examples would reduce ambiguity and improve the learning experience.
+Correctness: 80%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day6/xp/src/index.js
+suggestions for improvement:
+- The provided code is only the basic React app setup.  It doesn't implement any of the exercises (Error Boundary, Lifecycle methods, etc.) described in the chapter content.  The exercises require creating specific components (`BuggyCounter`, `ErrorBoundary`, and modifying the App component) and implementing lifecycle methods (`componentDidCatch`, `shouldComponentUpdate`, `componentDidUpdate`, `componentWillUnmount`, etc.).
+- Add the `BuggyCounter`, `ErrorBoundary`, and the required logic for all three simulations in Exercise 1.
+- Implement the `shouldComponentUpdate`, `componentDidUpdate`, and `getSnapshotBeforeUpdate` lifecycle methods in Exercise 2, and also the `componentWillUnmount` lifecycle method in Exercise 3.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day6/xp/src/reportWebVitals.js
+suggestions for improvement:
+- The provided code is a standard React performance monitoring setup using `reportWebVitals` and `web-vitals`.  It's completely unrelated to the exercises described in the chapter content.
+- The exercises focus on React lifecycle methods, error boundaries, and event handlers. This code doesn't address any of those topics.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day6/xp/src/setupTests.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----

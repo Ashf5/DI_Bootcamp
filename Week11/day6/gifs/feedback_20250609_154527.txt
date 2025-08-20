@@ -1,0 +1,29 @@
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week11/day6/gifs/index.html
+suggestions for improvement:
+- Improve error handling: The current `try...catch` block only logs errors to the console.  A more user-friendly approach would be to display an error message on the page if the API request fails.
+- Add loading indicator:  While the API call is in progress, display a loading indicator to provide feedback to the user. This improves the user experience.
+- Enhance styling: The current styling is minimal.  Consider adding CSS to improve the visual presentation of the GIFs and buttons.
+- Use more descriptive variable names:  Names like `data` and `gif` could be made more explicit (e.g., `giphyData`, `gifImage`).
+- Organize code into functions: Break down the JavaScript code into smaller, more manageable functions to improve readability and maintainability. For example, separate functions for fetching GIFs, rendering GIFs, and handling delete events would enhance the code structure.
+- Add input validation: Check if the user entered a search query before making the API call. If not, display an appropriate message.
+Correctness: 95%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week11/day6/gifs/main.js
+suggestions for improvement:
+- Add input field and button to the HTML file as specified in the instructions.
+- Improve error handling to provide more informative messages to the user instead of only logging to the console.
+- Add styling to the GIF and buttons for better visual presentation.
+- Consider adding loading indicators to enhance the user experience during API calls.
+- The `parseGif` function could benefit from more robust error handling.  For example, checking if `jsonObj.data` and `jsonObj.data[0]` exist before accessing nested properties.
+- Add a check for the existence of `'gif_section'` before using `getElementById`.  If it doesn't exist the code will error.
+Correctness: 95%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week11/day6/gifs/styles.css
+suggestions for improvement:
+- The provided code is only CSS.  It lacks the HTML for the form and the JavaScript to fetch the GIF, display it, and handle delete operations.  The core functionality described in the Chapter Content/Questions is entirely missing.
+- Add HTML elements for the form (input and button), a section to display GIFs, and a 'Delete All' button.
+- Implement JavaScript using `fetch`, `async/await`, and `try/catch` to handle API requests, display GIFs, and manage delete buttons.
+- Ensure the delete buttons correctly remove their corresponding GIFs.  Implement the 'Delete All' button functionality.
+- Consider adding error handling for API requests (e.g., network errors or invalid category searches).
+Correctness: 0%
+-----
