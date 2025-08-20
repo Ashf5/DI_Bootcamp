@@ -1,0 +1,75 @@
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day2/daily_challenge/carousel/package.json
+suggestions for improvement:
+- The provided code is a `package.json` file, not a React component.  It only lists the necessary dependencies to *build* a React carousel using `react-responsive-carousel`.  It doesn't actually *implement* the carousel.
+- The `package.json` is well-structured and easy to understand.  All necessary dependencies for building a React application with the specified carousel package are included.
+- While the choice of `react-responsive-carousel` is efficient,  consider adding performance optimization techniques like lazy loading of images within the carousel once the actual React components are implemented. 
+- Add error handling for cases where images fail to load.
+Correctness: 80%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day2/daily_challenge/carousel/public/index.html
+suggestions for improvement:
+- This HTML file is only a template for a React application.  It does not contain the actual React code to create the carousel.  You need to add the React components and the `react-responsive-carousel` package to build the carousel.
+- Add the necessary imports for the carousel package in a React component (e.g., App.js).
+- Fetch and display the images using the provided URLs within the carousel component.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day2/daily_challenge/carousel/public/manifest.json
+suggestions for improvement:
+- This JSON is a manifest file for a React application, not a React carousel.  It describes application metadata like icons and theme color, but doesn't contain any code to create a carousel.
+- The chapter explicitly requires building a React carousel using the `react-responsive-carousel` package. This JSON provides no such implementation.
+- To address the chapter's requirements, you need to write React code using JSX, import the carousel component, and render it with images.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day2/daily_challenge/carousel/src/App.css
+suggestions for improvement:
+- This code is CSS for styling a React app, but it doesn't implement a carousel.  It needs to import `react-responsive-carousel`, use JSX to render the carousel, and fetch images from the provided URLs.
+- Add the necessary imports for `react-responsive-carousel`.
+- Use JSX to create the carousel component, integrating image URLs into the carousel.
+- The CSS is well-formatted and readable, but it's irrelevant to the assignment.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day2/daily_challenge/carousel/src/App.js
+suggestions for improvement:
+- The code provided is a basic React app template. It does not implement a carousel using the `react-responsive-carousel` package as instructed.
+- The code needs to be modified to import the carousel component, fetch the images specified, and render them within the carousel.
+- Add the necessary image URLs as props to the carousel component.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day2/daily_challenge/carousel/src/App.test.js
+suggestions for improvement:
+- The provided code is a React test, not a React Carousel implementation.  It tests for the presence of text 'learn react', which is not relevant to the assignment.
+- The assignment requires creating a carousel using the `react-responsive-carousel` package and displaying images from specified URLs. This code does not do that.
+- Implement the carousel using the specified package and images as instructed in the assignment.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day2/daily_challenge/carousel/src/Carousel.js
+suggestions for improvement:
+- The image paths are hardcoded.  It would be better to use dynamic imports or pass image URLs as props to make the component more reusable and adaptable to different image sources.
+- Add error handling for cases where an image fails to load.  A placeholder image or an error message would improve the user experience.
+- Consider adding more styling to customize the carousel's appearance beyond the default styling provided by `react-responsive-carousel`.
+Correctness: 90%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day2/daily_challenge/carousel/src/index.css
+suggestions for improvement:
+- This code is just CSS styling.  It does not create a React carousel as instructed. You need to provide React code that uses the `react-responsive-carousel` package and displays the images specified in the instructions.
+- Add React code that imports the necessary carousel component, fetches the image URLs, and renders them within the carousel structure.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day2/daily_challenge/carousel/src/index.js
+suggestions for improvement:
+- The code is missing the actual implementation of the carousel component in `Carousel.js`.  It correctly imports the necessary component, but doesn't show how it's used with the images.
+- Add error handling in case the image URLs are invalid or unavailable.
+- Consider adding props to `MyCarousel` to allow customization (e.g., changing the autoplay speed, adding captions).
+Correctness: 80%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day2/daily_challenge/carousel/src/reportWebVitals.js
+suggestions for improvement:
+- The provided code is a web vitals reporting function. It's completely unrelated to building a React carousel using the `react-responsive-carousel` package, as instructed in the chapter content.
+- The code should be replaced with a React component that uses the `react-responsive-carousel` library to display images from the provided URLs.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day2/daily_challenge/carousel/src/setupTests.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----

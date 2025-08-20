@@ -1,0 +1,84 @@
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day4/todo/package.json
+suggestions for improvement:
+- This JSON file is a `package.json` file for a React project. It does not contain any React code implementing the task manager with editing and filtering features as described in the chapter content.  The instructions clearly state to build a React application with specific features using `useContext`, `useReducer`, and `useRef`. This file only sets up the project dependencies and scripts; it doesn't implement any of the required functionality.
+- Provide the actual React code that implements the task manager with the requested features.  The JSON provided is only a project setup file.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day4/todo/public/index.html
+suggestions for improvement:
+- This HTML file is only a basic template for a React application.  It doesn't contain any of the React code necessary to implement the task manager with editing and filtering capabilities as described in the chapter content.  The instructions clearly state to "Extend the existing Task Manager application (from the previous exercise)", implying that a pre-existing Task Manager application codebase should be used as a starting point. This provided code is just a barebones HTML file and therefore does not meet the requirements.
+- The chapter explicitly requires the use of `useContext`, `useReducer`, and `useRef` in React.  None of these are present in the provided code.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day4/todo/public/manifest.json
+suggestions for improvement:
+- The provided code is a `manifest.json` file, which is a configuration file for web applications, not a React application implementing task management features. It does not contain any React code or logic related to task editing, filtering, `useContext`, `useReducer`, or `useRef`.
+- The instructions clearly specify to build a React application with features for task editing and filtering, utilizing specific React hooks. This code snippet is completely unrelated to these requirements.
+- Provide the actual React code for evaluation.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day4/todo/src/App.css
+suggestions for improvement:
+- The provided code is only CSS styling for a React application. It does not implement any of the functionality described in the chapter content (adding task editing, filtering by completion status, using useContext, useReducer, and useRef).
+- The CSS is reasonably readable and well-structured, but it's irrelevant without the corresponding React components and logic.
+- Add React components and JavaScript logic to handle task management, including editing, filtering, and state management using the specified React Hooks (useContext, useReducer, useRef).
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day4/todo/src/App.js
+suggestions for improvement:
+- The `editTask` action in the reducer could be improved for efficiency.  Instead of filtering and pushing, directly update the task in the array using `map`. This avoids unnecessary array creation.
+- Add input validation to prevent empty task submissions.
+- Consider using a unique ID generation method (like UUID) instead of relying on the array index for task IDs. This is more robust and avoids potential issues if tasks are reordered or deleted.
+- Improve the UI for editing tasks.  Currently, it doesn't provide a visual cue or an editing mechanism besides replacing the entire task.  A more user-friendly approach would involve an in-place edit feature with an edit button.
+Correctness: 90%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day4/todo/src/App.test.js
+suggestions for improvement:
+- The provided code is a simple test from React Testing Library and does not implement any of the features described in the chapter content.  It does not use `useContext`, `useReducer`, or `useRef`. It doesn't include task editing, filtering, or any task management functionality.
+- The code needs to be replaced with a complete React application that fulfills the requirements of the chapter: adding task editing and filtering capabilities using the specified hooks.
+- Implement the `EDIT_TASK` and `FILTER_TASKS` actions within a reducer.  Use `useRef` to manage the editing input field.
+- Add buttons for filtering tasks by completion status (all, completed, active).
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day4/todo/src/Sort.js
+suggestions for improvement:
+- The provided code only implements the filtering functionality (Show All, Show Completed, Show Active).  It's missing the task editing functionality requested in the chapter content.
+- The code lacks error handling.  Consider adding checks to ensure the dispatched actions are handled correctly by the reducer.
+- The component name `Sort` is slightly misleading.  A more descriptive name like `TaskFilter` would be better.
+- The code doesn't use `useContext` or `useRef` as requested in the instructions.  These hooks are essential for accessing and manipulating the application state and enabling task editing.
+- It would be beneficial to include a visual indicator of the currently active filter.
+Correctness: 70%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day4/todo/src/TaskList.js
+suggestions for improvement:
+- The code lacks filtering functionality.  There are no buttons or state management for filtering tasks by completion status ('show all', 'show completed', 'show active').
+- The `useContext` hook is not used, despite being mentioned in the chapter objective.
+- The `useReducer` hook is implicitly used (via `dispatch`), but the reducer itself is not shown, hindering a complete assessment of its correctness.
+- Error handling (e.g., what happens if a task ID is invalid) is missing.
+- The UI for editing could be improved.  A more integrated approach (e.g., toggling inline edit input instead of a separate form) would be cleaner.
+Correctness: 85%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day4/todo/src/index.css
+suggestions for improvement:
+- The provided code is only CSS styling and does not implement any of the required functionality (task editing, filtering, use of useContext, useReducer, useRef).  It doesn't even provide a basic Task Manager application.
+- The challenge requires building a React application with specific features.  This CSS only provides basic styling for a webpage.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day4/todo/src/index.js
+suggestions for improvement:
+- This code only provides the basic setup for a React application using create-react-app.  It does not implement any of the features specified in the Chapter Content/Questions (adding task editing, filtering tasks by completion status, using useContext, useReducer, and useRef).
+- The App.js and other necessary components and logic are missing.  The provided code only renders a basic app shell. You need to implement the task manager application with all the specified features.
+- Add the actual Task Manager application logic including the components, state management using useReducer and useContext, and the use of useRef for editing.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day4/todo/src/reportWebVitals.js
+suggestions for improvement:
+- The provided code is a standard `reportWebVitals` function used for web performance monitoring with web-vitals.  It's completely unrelated to the task of building a Task Manager application with task editing, filtering, and use of useContext, useReducer, and useRef.
+- This function should be removed and replaced with code that implements the Task Manager features as described in the chapter content.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week18/day4/todo/src/setupTests.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----

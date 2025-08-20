@@ -1,0 +1,94 @@
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day4/xp/package.json
+suggestions for improvement:
+- The provided code is a `package.json` file for a React application. It does not contain any implementation of the exercises described in the Chapter Content/Questions.  It only sets up the project dependencies and scripts.  To receive a higher correctness score, the code should include the actual React components and logic for each exercise.
+- Add the actual code for Exercises 1-4 as described in the instructions. This includes creating the necessary components (`Car`, `Garage`, `Events`, `Phone`, `Color`), implementing event handlers, using state (or useState hook), and correctly handling lifecycle methods (or useEffect hook).
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day4/xp/public/index.html
+suggestions for improvement:
+- The provided code is just a basic HTML file for a React application. It doesn't contain any of the React components or logic required to complete the exercises.  The exercises require creating React components (`Car`, `Garage`, `Events`, `Phone`, `Color`), implementing JSX, using state (and useState hook), handling events, and using lifecycle methods (or useEffect hook). None of this is present in the given code.
+- Add the necessary React components and functionality as described in the exercises to solve the problems.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day4/xp/public/manifest.json
+suggestions for improvement:
+- This JSON represents a manifest file for a React app, not the React code itself.  It doesn't address any of the exercises (JSX, components, lifecycle, event handlers).
+- The exercises require actual React code within components to handle JSX, events, and state management. This manifest file only defines app metadata for things like icons and display settings.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day4/xp/src/App.css
+suggestions for improvement:
+- The provided code is a basic CSS stylesheet for a React application. It does not implement any of the exercises outlined in the Chapter Content/Questions (JSX, Components, React Lifecycle, Event Handlers).
+- You need to create React components (`Car.js`, `Garage.js`, `Events`, `Phone`, `Color`),  implement JSX, use state (useState hook or class component's state) and handle events (onClick, onKeyDown) as specified in the exercises.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day4/xp/src/App.js
+suggestions for improvement:
+- In `App.js`, the `Car` component is called with `props = {carinfo}`, but it should be simply `<Car carinfo={carinfo} />` for better readability and adherence to React's prop passing conventions.
+- The provided code snippets for `Car.js`, `Events.js`, `Phone.js`, and `Color.js` are missing.  The correctness score is impacted because we cannot assess how accurately these components fulfill the exercise requirements without seeing their implementation.  Exercise 1, parts I-III, Exercise 2 (Parts I-III), Exercise 3 (Parts I-II), and Exercise 4 need to be fully implemented and reviewed to provide a comprehensive correctness assessment.
+- Add error handling and input validation in the event handlers to improve robustness and prevent unexpected behavior.
+Correctness: 80%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day4/xp/src/App.test.js
+suggestions for improvement:
+- The provided code is a Jest test for a React app. It doesn't implement any of the exercises described in the chapter content.  It needs to be replaced with code that addresses the exercises (JSX, Components, React Lifecycle, Event Handlers).
+- The test itself is well-written and readable. However, it's testing for something completely unrelated to the assignment.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day4/xp/src/Components/Car.js
+suggestions for improvement:
+- The `Car` component accesses `props.props.model`. It should be `props.model`.
+- The `carinfo` object is not defined within the `Car` component; it should be passed as a prop.
+- Add proptypes to validate props
+- The exercise requests a functional component for the Garage component. Currently, the provided code only partially implements this.
+Correctness: 70%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day4/xp/src/Components/Color.js
+suggestions for improvement:
+- The `useEffect` hook is misused. It should have a second argument (dependency array) to control when it runs. Currently, it runs on every render, causing the alert to pop up repeatedly.
+- Add a `useEffect` hook with an empty dependency array [] to simulate `componentDidMount`.  Inside this hook, set a timeout to change the color after 5 seconds as per Exercise 4 instructions. This correctly aligns with the chapter content on React lifecycle.
+- The exercise specifies that the `favoriteColor` should change to yellow after 5 seconds and then blue on button click. The provided code only changes to blue.
+Correctness: 80%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day4/xp/src/Components/Events.js
+suggestions for improvement:
+- The variable names could be more descriptive. For example, `isToggleOn` could be `toggleStatus` and `setToggle` could be `setToggleStatus`. This improves readability.
+- Consider adding a small delay or debounce to the `handleKeyDown` function to prevent multiple alerts if the user holds down the Enter key.
+Correctness: 100%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day4/xp/src/Components/Garage.js
+suggestions for improvement:
+- The code is concise and functional, but adding prop-type validation would enhance readability and maintainability.  This would help prevent runtime errors caused by incorrect prop types being passed to the component.
+- Consider using a more descriptive component name than just 'Garage'. Something like 'GarageComponent' would improve readability, especially in larger projects.
+Correctness: 100%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day4/xp/src/Components/Phone.js
+suggestions for improvement:
+- The `changeColor` function should update the color to 'blue', as specified in the instructions, not 'red'.
+- Add more descriptive variable names. For example, instead of `phoneData`, use `phoneState` or similar.  This enhances readability.
+Correctness: 80%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day4/xp/src/index.css
+suggestions for improvement:
+- The provided code is just CSS styling for a webpage.  It does not implement any of the JavaScript exercises described in the chapter content.  It needs to be replaced with React components and JavaScript code that addresses the exercises.
+- Add React components and functional implementations for Exercise 1 (Car and Components), Exercise 2 (Events), Exercise 3 (Phone and Components), and Exercise 4 (useEffect hook) as detailed in the instructions.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day4/xp/src/index.js
+suggestions for improvement:
+- The provided code is a basic React app setup. It doesn't contain any of the exercises (Car, Garage, Events, Phone, Color components) described in the chapter content.  It only shows the standard boilerplate for a React application.
+- Implement the exercises described in the chapter content.  Create the components (`Car`, `Garage`, `Events`, `Phone`, `Color`) with the specified functionality and interactions.
+- For functional components, use hooks like `useState` and `useEffect` as instructed in the exercises.
+- For event handling (Exercise 2), correctly use the `onClick`, `onKeyDown` event handlers.  Ensure that these handlers perform the actions specified in the instructions.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day4/xp/src/reportWebVitals.js
+suggestions for improvement:
+- The provided code is a performance monitoring utility using web-vitals.  It's completely unrelated to the exercises described in the chapter content which focuses on React components, JSX, lifecycle methods, and event handling.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week16/day4/xp/src/setupTests.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----

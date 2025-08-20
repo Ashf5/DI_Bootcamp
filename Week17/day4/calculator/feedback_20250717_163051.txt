@@ -1,0 +1,56 @@
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day4/calculator/package.json
+suggestions for improvement:
+- This is a package.json file, not React code.  It defines project dependencies and scripts, but doesn't contain any implementation of the calculator.
+- The chapter requires a React application that takes two inputs, performs an operation (addition initially, then optionally others), and displays the result. This file only provides setup for building such an application, not the application itself.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day4/calculator/public/index.html
+suggestions for improvement:
+- The provided code is only an HTML file for a React application.  It does not contain any React code to implement the calculator.  The challenge requires building a React calculator with input fields, a button, and functionality to perform calculations.
+- Add React components and JavaScript logic to handle user input, perform calculations, and update the display.
+- Implement the bonus feature of selecting different operations (+, -, *, /).
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day4/calculator/public/manifest.json
+suggestions for improvement:
+- This JSON does not contain any React code.  It describes a React app's manifest file, which is used for metadata like icons and theme color, not the actual calculator functionality.
+- The challenge requires creating a React calculator with input fields, a button, and functionality to add (and optionally, subtract, multiply, or divide) numbers. This JSON provides no such functionality.
+- Implement the React calculator as described in the challenge instructions.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day4/calculator/src/App.css
+suggestions for improvement:
+- The provided code is only CSS styling.  It does not contain any JavaScript code to implement the React calculator functionality described in the Chapter Content/Questions.
+- Add React components to handle user input, perform calculations, and update the display.
+- Implement the functionality to add two numbers.  The bonus feature of adding a select for different operations should also be added.
+- Use React state to manage the input values and the calculated result.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day4/calculator/src/App.js
+suggestions for improvement:
+- Use a more descriptive name for the `add` function, such as `handleAddition`.  This improves readability.
+- The form's `onSubmit` event should be handled to prevent page reload.  Currently, it relies on `onClick` of the submit button, which is less standard and could be confusing. 
+- Add input validation to handle non-numeric input and potential errors more gracefully.  For example, display an error message if the user enters non-numeric values.
+- Implement the bonus feature (select element for different operations) to make the calculator more versatile as requested in the challenge instructions. 
+Correctness: 90%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day4/calculator/src/index.css
+suggestions for improvement:
+- The provided CSS code is only styling the body and code elements.  It does not implement any of the React functionality or calculator logic described in the chapter content.
+- The task requires building a React calculator that takes two inputs, performs an operation (addition initially, then optionally other operations), and displays the result. This CSS does not address that requirement.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day4/calculator/src/index.js
+suggestions for improvement:
+- The provided code is a standard React setup.  It does not contain any code that implements a calculator.  A functional React component needs to be created to handle user input, perform calculations, and update the display.
+- Add a component (e.g., `Calculator.js`) that includes input fields for numbers, a select for operation, a button, and a display area for the result.
+- Implement the calculation logic within the component's event handler (triggered by the button click).
+- Use React state to manage the input values and the calculated result.
+Correctness: 0%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week17/day4/calculator/src/reportWebVitals.js
+suggestions for improvement:
+- The provided code is a React performance monitoring utility using web-vitals. It's completely unrelated to the calculator challenge described in the chapter content.
+- The code should be replaced with a React component that implements a calculator with input fields for two numbers, a select for operation type (addition, subtraction, multiplication, division), a button to trigger calculation, and an area to display the result.
+Correctness: 0%
+-----
