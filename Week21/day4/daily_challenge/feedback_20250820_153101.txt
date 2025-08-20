@@ -1,0 +1,18 @@
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week21/day4/daily_challenge/challenge.ts
+suggestions for improvement:
+- **Correct `Library.books` access modifier:** Change the `books` property in the `Library` class from `protected` to `private` as explicitly required by the problem statement. This is crucial for proper encapsulation.
+- **Fix `getBookDetails` logical error:** The `find` method in `getBookDetails` uses an assignment operator (`=`) instead of a comparison operator (`===`). Change `book.isbn=isbn` to `book.isbn===isbn` to correctly find the book by its ISBN.
+- **Adjust `DigitalLibrary` for private `books`:** Once `Library.books` is made private, `DigitalLibrary.listBooks` will no longer be able to directly access `this.books`. Consider adding a `protected` getter method (e.g., `protected getBooks(): Book[]`) in `Library` to allow `DigitalLibrary` to retrieve the list of books while maintaining encapsulation.
+- **Demonstrate `getBookDetails` in usage:** The provided usage example only prints the list of book titles. Add calls to `library.getBookDetails('some-isbn')` for one or more books to fully demonstrate the required functionality.
+- **Improve `getBookDetails` return type and handling:** Instead of returning a formatted string, consider returning the `Book` object itself (or `Book | undefined`) if the book is not found. This provides more flexibility for consumers of the method. If a string is strictly required, ensure the string building logic is robust.
+- **Refine `getBookDetails` string construction:** For improved readability and maintainability, the string construction in `getBookDetails` could be slightly refactored to use an array and `join`, especially if more optional properties were added.
+Correctness: 55%
+-----
+URL: URL: https://github.com/Ashf5/DI_Bootcamp/blob/main/Week21/day4/daily_challenge/tsconfig.json
+suggestions for improvement:
+- The provided code is a `tsconfig.json` file, which is a configuration file for the TypeScript compiler, not the implementation code for the library system. Please provide the actual TypeScript source code (e.g., `.ts` files) that defines the `Book` interface, `Library` class, and `DigitalLibrary` class.
+- Ensure your submission includes the TypeScript classes and interfaces as specified in the instructions (e.g., `interface Book`, `class Library`, `class DigitalLibrary` with their respective properties and methods).
+- Implement the `addBook`, `getBookDetails`, and `listBooks` methods as required.
+- Demonstrate the usage by creating an instance of `DigitalLibrary`, adding books, and printing details/lists as instructed.
+Correctness: 0%
+-----
